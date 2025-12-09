@@ -116,7 +116,7 @@ outletraw = read.csv(here("raw_data/IMLS/pls_fy23_outlet_pud23i.csv"))
 
 ```
 
-# clean the ae file 
+# clean the ae file
 
 ```{r}
 
@@ -142,7 +142,7 @@ aeclean = aeraw %>%
 
 ```
 
-# calculate state and national values 
+# calculate state and national values
 
 The visit rate is defined as the ratio of total visits to total population served (R=numerator/denominatorR = \text{numerator}/\text{denominator}R=numerator/denominator). Confidence intervals are calculated using two approaches depending on the size of the numerator:
 
@@ -257,7 +257,7 @@ outletclean = outletraw %>%
 outletae = merge(outletclean, aeclean, by = "FSCSKEY", all.x = TRUE)
 ```
 
-# Calculate county level medians and CIs 
+# Calculate county level medians and CIs
 
 Note: Historically, we have calculated nonparametric confidence intervals for medians using the [CIPCTLDF option in SAS's PROC UNIVARIATE](https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/procstat/procstat_univariate_syntax01.htm#procstat.univariate.proc_cipctldf), which applies [these formulas](https://go.documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/procstat/procstat_univariate_details14.htm#procstat.univariate.clpctl). However, this function is not directly replicable outside of SAS.
 
@@ -269,7 +269,7 @@ Below I've included one approach for calculating distribution-free confidence in
 #meds = outletae %>% group_by(statecode.x, countycode.x) %>%
 #  rename(statecode = statecode.x, countycode = countycode.x) %>% 
 #  summarize(med_visit = median(visits_per_pop, na.rm = TRUE))
-
+library(Hmisc)
 
 medscis = outletae %>% group_by(statecode.x, countycode.x) %>% 
   rename(statecode = statecode.x, countycode= countycode.x) %>% 
@@ -291,7 +291,7 @@ medscis = outletae %>% group_by(statecode.x, countycode.x) %>%
 
 ```
 
-# merge with fipscodes 
+# merge with fipscodes
 
 ```{r}
 
@@ -317,12 +317,12 @@ write.csv(libsfinal, file = here("measure_datasets/v181_r2026.csv"))
 
 ```
 
-# Compare to SAS calculated data 
+# Compare to SAS calculated data
 
 There are substantial differences, with the R calculated CIs being much wider in many cases.
 
 ```{r}
-mb = haven::read_sas(here("temp/v181_mb.sas7bdat"))
+mb = haven::read_sas("P:/CH-Ranking/Data/2026/3 Data calculated needs checking/v181.sas7bdat")
 mbh = merge(mb, libsfinal, by = c("statecode", "countycode"))
 
 mbh$rawdiff = mbh$v181_rawvalue.x - mbh$v181_rawvalue.y
