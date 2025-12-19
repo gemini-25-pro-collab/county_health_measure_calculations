@@ -22,56 +22,39 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Raw data access
 
-Population data come from Census population estimates (https://www2.census.gov/programs-surveys/popest/datasets) from 2017 to 2023. July 1 population estimates are used for each year (e.g., for 2022, set YEAR = 4 to get 7/1/2022 population estimate). Data files can be downloaded using the links below.
+Population data come from Census population estimates (https://www2.census.gov/programs-surveys/popest/datasets) from 2018 to 2024. July 1 population estimates are used for each year (e.g., for 2022, set YEAR = 4 to get 7/1/2022 population estimate). Data files can be downloaded using the links below.
 
-2023 Census Population Estimates
-file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2023/cc-est2023-alldata.pdf
-Data: https://www2.census.gov/programs-surveys/popest/datasets/2020-2023/counties/asrh/cc-est2023-alldata.csv
+2024​ Census Population Estimates\
+file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2024/cc-est2024-alldata.pdf ​\
+Data: https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-alldata.csv
 
-2022 Census Population Estimates
-file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2022/cc-est2022-alldata.pdf
-Data: https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/counties/asrh/cc-est2022-all.csv
+2023 Census Population Estimates file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2023/cc-est2023-alldata.pdf Data: https://www2.census.gov/programs-surveys/popest/datasets/2020-2023/counties/asrh/cc-est2023-alldata.csv
 
-2021 Census Population Estimates
-file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2021/cc-est2021-alldata.pdf
-Data: https://www2.census.gov/programs-surveys/popest/datasets/2020-2021/counties/asrh/cc-est2021-all.csv
+2022 Census Population Estimates file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2022/cc-est2022-alldata.pdf Data: https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/counties/asrh/cc-est2022-all.csv
 
-2020 Census Population Estimates
-file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2020/cc-est2020-alldata.pdf
-Data: https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/asrh/CC-EST2020-ALLDATA.csv
+2021 Census Population Estimates file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2020-2021/cc-est2021-alldata.pdf Data: https://www2.census.gov/programs-surveys/popest/datasets/2020-2021/counties/asrh/cc-est2021-all.csv
 
-2019 Census Population Estimates
-file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2019/cc-est2019-alldata.pdf
-Data: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/asrh/cc-est2019-alldata.csv 
+2020 Census Population Estimates file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2020/cc-est2020-alldata.pdf Data: https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/asrh/CC-EST2020-ALLDATA.csv
 
-2018 Census Population Estimates
-file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2018/cc-est2018-alldata.pdf 
-Data: https://www2.census.gov/programs-surveys/popest/datasets/2010-2018/counties/asrh/cc-est2018-alldata.csv 
+2019 Census Population Estimates file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2019/cc-est2019-alldata.pdf Data: https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/asrh/cc-est2019-alldata.csv
 
-2017 Census Population Estimates
-file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2017/cc-est2017-alldata.pdf 
-Data: https://www2.census.gov/programs-surveys/popest/datasets/2010-2017/counties/asrh/cc-est2017-alldata.csv 
+2018 Census Population Estimates file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2018/cc-est2018-alldata.pdf Data: https://www2.census.gov/programs-surveys/popest/datasets/2010-2018/counties/asrh/cc-est2018-alldata.csv
 
-2022 and 2023 Connecticut (CT) counties population: used 2021 CT county population for legacy county FIPS codes. 2021 CT population values were used to calculate both state and national values as well.
+NOT NEEDED FOR 2026 calculations: 2017 Census Population Estimates file layout: https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2017/cc-est2017-alldata.pdf Data: https://www2.census.gov/programs-surveys/popest/datasets/2010-2017/counties/asrh/cc-est2017-alldata.csv
 
-Subgroups are based on single-race categories. 
+2022, 2023, 2024 Connecticut (CT) counties population: used 2021 CT county population for legacy county FIPS codes. 2021 CT population values were used to calculate both state and national values as well.
+
+Subgroups are based on single-race categories.
 
 We calculate v014 teen births using natality data requested from the National Center for Health Statistics. However, CDC WONDER can also be used to pull teen birth rates: https://wonder.cdc.gov/natality-current.html
 
 If using CDC WONDER, 1) select the most recent 7 years, 2) select Age of Mother 15-19 years, and 3) group results by county
 
-## Subgroups 
+## Subgroups
 
 Race/ethnicity is defined as follows:
 
-if MRACEHISP = 1 then race=1; /* Non-Hispanic White (only) */
-if MRACEHISP = 2 then race=2; /* Non-Hispanic Black (only) */
-if MRACEHISP = 3 then race=3; /* Non-Hispanic AIAN (only) */
-if MRACEHISP = 4 then race=4; /* Non-Hispanic Asian (only) */
-if MRACEHISP = 5 then race=5; /* Non-Hispanic NHOPI (only) */
-if MRACEHISP = 6 then race=6; /* Non-Hispanic more than one race */
-if MRACEHISP = 7 then race=8; /* Hispanic */
-
+if MRACEHISP = 1 then race=1; /\* Non-Hispanic White (only) */ if MRACEHISP = 2 then race=2; /* Non-Hispanic Black (only) */ if MRACEHISP = 3 then race=3; /* Non-Hispanic AIAN (only) */ if MRACEHISP = 4 then race=4; /* Non-Hispanic Asian (only) */ if MRACEHISP = 5 then race=5; /* Non-Hispanic NHOPI (only) */ if MRACEHISP = 6 then race=6; /* Non-Hispanic more than one race */ if MRACEHISP = 7 then race=8; /* Hispanic \*/
 
 MRACEHISP: Mother’s Race/Hispanic Origin
 
@@ -88,13 +71,10 @@ library(here)
 ```{r}
 # set up directory that holds data needed for calculations
 # NCHS mortality data, not allowed to share in GitHub
-nchs_mort_dir <- "D:/CHRR/mortality raw"
+nchs_mort_dir <- "E:/CHRR/mortality raw"
 
 # NCHS natality data, not allowed to share in GitHub
-nchs_nata_dir <- "D:/CHRR/natality raw/rawdata"
-
-# Census county population estimates data
-census_pop_dir <- "D:/CHRR/pop raw"
+nchs_nata_dir <- "E:/CHRR/natality raw/rawdata"
 ```
 
 # standard county and state fips
@@ -110,8 +90,11 @@ fips <-  bind_rows(
 
 ```
 
-Load population data from census 
+Load population data from census
+
 ```{r}
+d24 = read.csv("https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-alldata.csv")
+
 d23 = read.csv("https://www2.census.gov/programs-surveys/popest/datasets/2020-2023/counties/asrh/cc-est2023-alldata.csv")
 
 d22 = read.csv("https://www2.census.gov/programs-surveys/popest/datasets/2020-2022/counties/asrh/cc-est2022-all.csv")
@@ -124,32 +107,31 @@ d19 = read.csv("https://www2.census.gov/programs-surveys/popest/datasets/2010-20
 
 d18 = read.csv("https://www2.census.gov/programs-surveys/popest/datasets/2010-2018/counties/asrh/cc-est2018-alldata.csv")
 
-d17 = read.csv("https://www2.census.gov/programs-surveys/popest/datasets/2010-2017/counties/asrh/cc-est2017-alldata.csv")
+#d17 = read.csv("https://www2.census.gov/programs-surveys/popest/datasets/2010-2017/counties/asrh/cc-est2017-alldata.csv")
 
 
 ```
 
-combine years and subset population data to include females between ages 15 and 19 
+combine years and subset population data to include females between ages 15 and 19
 
 ```{r}
 library(tidyverse)
-df = list(d17, d18, d19, d20, d21, d22, d23)
+df = list(d18, d19, d20, d21, d22, d23, d24)
 dfsub = lapply(df, function(x) x %>% filter(AGEGRP == 4, YEAR == max(YEAR, na.rm = TRUE)) %>% 
                  select(NHWA_FEMALE, NHBA_FEMALE, NHIA_FEMALE, NHAA_FEMALE, NHNA_FEMALE, NHTOM_FEMALE, H_FEMALE, STATE, COUNTY))
 
 # fix connecticut for 2022 and 2023: set ct pop values for 2022 and 2023 to be equal to ct vals in 2021 
-ct21 = dfsub[[5]] %>% filter(STATE == 9) #get vals from 2021 
-dfsub[[6]] = rbind(dfsub[[6]] %>% filter(STATE != 9), ct21) #replace for 2022 
-dfsub[[7]] = rbind(dfsub[[7]] %>% filter(STATE != 9), ct21) #replace for 2023 
+ct21 = dfsub[[4]] %>% filter(STATE == 9) #get vals from 2021 
+dfsub[[5]] = rbind(dfsub[[5]] %>% filter(STATE != 9), ct21) #replace for 2022 
+dfsub[[6]] = rbind(dfsub[[6]] %>% filter(STATE != 9), ct21) #replace for 2023 
+dfsub[[7]] = rbind(dfsub[[7]] %>% filter(STATE != 9), ct21) #replace for 2024 
 
 
 
 #get state level value for CT from 2022 
-ct22= d22 %>% filter(AGEGRP == 4, YEAR == max(YEAR, na.rm = TRUE), STATE ==9) %>% 
-               select(TOT_FEMALE, STATE, COUNTY) %>% summarize(TOT_FEMALE = sum(TOT_FEMALE))
+#ct22= d22 %>% filter(AGEGRP == 4, YEAR == max(YEAR, na.rm = TRUE), STATE ==9) %>% select(TOT_FEMALE, STATE, COUNTY) %>% summarize(TOT_FEMALE = sum(TOT_FEMALE))
 
-ct23= d23 %>% filter(AGEGRP == 4, YEAR == max(YEAR, na.rm = TRUE), STATE ==9) %>% 
-               select(TOT_FEMALE, STATE, COUNTY) %>% summarize(TOT_FEMALE = sum(TOT_FEMALE))
+#ct23= d23 %>% filter(AGEGRP == 4, YEAR == max(YEAR, na.rm = TRUE), STATE ==9) %>% select(TOT_FEMALE, STATE, COUNTY) %>% summarize(TOT_FEMALE = sum(TOT_FEMALE))
 
 
 #fix some old fipscodes 
@@ -187,8 +169,7 @@ summarise(pop = sum(popsums, na.rm = TRUE))
 
 ```
 
-
-Calculate state and national sums 
+Calculate state and national sums
 
 ```{r}
 dst = dfn %>% group_by(STATE, race) %>% 
@@ -220,12 +201,11 @@ pop_all_f = merge(fips, pop_all, by.y = c("STATE", "COUNTY"), by.x = c("statecod
 
 ```
 
-# Now load the NCHS births data 
+# Now load the NCHS births data
 
 ```{r}
 
-nat17 = readr::read_fwf(paste0(nchs_nata_dir, "/NATL2017US.AllCnty.txt"), 
-                         col_positions = readr::fwf_cols(mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+#nat17 = readr::read_fwf(paste0(nchs_nata_dir, "/NATL2017US.AllCnty.txt"),                          col_positions = readr::fwf_cols(mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
 
 nat18 = readr::read_fwf(paste0(nchs_nata_dir, "/NATL2018US.AllCnty.txt"), 
                          col_positions = readr::fwf_cols(mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
@@ -245,7 +225,10 @@ nat22 = readr::read_fwf(paste0(nchs_nata_dir, "/NATL2022US.AllCnty.txt"),
 nat23 = readr::read_fwf(paste0(nchs_nata_dir, "/nat2023us.AllCnty.txt"), 
                          col_positions = readr::fwf_cols(mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
 
-nat = list(nat17, nat18, nat19, nat20, nat21, nat22, nat23)
+nat24 = readr::read_fwf(paste0(nchs_nata_dir, "/nat2024us.AllCounties.txt"), 
+                         col_positions = readr::fwf_cols(mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+
+nat = list(nat18, nat19, nat20, nat21, nat22, nat23, nat24)
 
 #remove births with mother's residence American Samoa, Guam, Northern Marianas, Puerto Rico, Virgin Islands, not applicable, and not classified ; remove non teen births 
 nat_fixed = lapply(nat, function(x) x %>% filter(mage == 2) %>% filter(!(state %in% c("AS", "GU", "MP", "PR", "VI", "XX", "ZZ", "AB", "BC", "MB", "NB", "ON", "QC", "SK", "ZZ")) & !(county_fips %in% c("000", "999"))) %>% mutate(birth = 1))
@@ -278,11 +261,8 @@ nattot= nattot %>% filter(state != "VI") %>% select("state", "county_fips", "mra
 
 ```
 
+calculate state and national totals
 
-
-
-
-calculate state and national totals 
 ```{r}
 statesums = nattot %>% group_by(state, mracehisp) %>% 
   summarise(birthsums = sum(birthsums, na.rm = TRUE))
@@ -300,16 +280,15 @@ natall$birthsums = ifelse(natall$birthsums < 10, NA, natall$birthsums)
 
 ```
 
-add and format fipscodes 
-select important cols only 
+add and format fipscodes select important cols only
+
 ```{r}
 nattot_fips <- merge(fips, natall, by.x = c("state", "countycode"), by.y = c("state", "county_fips"), all.x = TRUE) %>% select(statecode, countycode, birthsums, mracehisp)
 
 ```
 
+recode the race variable to match the pop data
 
-
-recode the race variable to match the pop data 
 ```{r}
 nattot_fips$racerecode = ifelse(nattot_fips$mracehisp == 1, "white", 
                            ifelse(nattot_fips$mracehisp == 2, "black",
@@ -322,10 +301,7 @@ nattot_fips$racerecode = ifelse(nattot_fips$mracehisp == 1, "white",
 
 ```
 
-
-
-Now create the final dataset and calculate rates 
-
+Now create the final dataset and calculate rates
 
 ```{r}
 #combine birth and population data 
@@ -395,14 +371,16 @@ v014 = how %>% select(statecode, countycode,
                       v014_race_hispanic_cihigh)
 ```
 
+compare to gl
 
+```{r}
+compare_subgroup("v014", v014, year = 2026)
+```
 
-
-save the measure_dataset 
+save the measure_dataset
 
 ```{r}
 #save to project 
-write.csv(v014, file = here("measure_datasets/v014_otherdata_R2025.csv"), row.names = FALSE)
+write.csv(v014, file = here("measure_datasets/v014_otherdata_R2026.csv"), row.names = FALSE)
 
 ```
-
