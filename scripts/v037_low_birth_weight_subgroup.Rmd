@@ -1,0 +1,290 @@
+---
+title: "v037 low birth weight race/ethnicity subgroups"
+author: "Hannah Olson-Williams"
+output: html_document
+---
+
+# Description 
+Percentage of live births with low birth weight (< 2,500 grams).
+
+
+# Connection to health 
+Low birth weight can be due to preterm births (<37 weeks of gestation) and intrauterine growth restrictions that are associated with increased infant morbidity and mortality risks.1 Structural barriers to proper nutrition and adequate prenatal care can result in slowed intrauterine growth.2,3 Maternal stress and living in a neighborhood with a high level of pollution are associated with lower birth weight4 as well as substance misuse during pregnancy.5 Other factors that increase the likelihood of preterm births include multiple births, pre-eclampsia, and infections such as chorioamnionitis, bacterial vaginosis, and sepsis.2,3
+
+Low birth weight is an important public health indicator that can be used to assess maternal health, nutrition, healthcare delivery, and poverty.1-3 Infants born with low birth weight have approximately 20 times greater chance of dying than those with normal birth weight.3 Infants who survive may face adverse health outcomes such as decreased growth, lower IQ, impaired language development, and chronic conditions (e.g., obesity, diabetes, cardiovascular disease) during adulthood.3,6
+
+# Low Birth Weight is a percentage 
+Low Birth Weight is the percentage of live births where the infant weighed less than 2,500 grams (approximately 5 lbs., 8 oz.).
+
+# Births are counted in the mother's county of residence 
+Births are counted in the county corresponding to the mother’s address on the child’s birth certificate, regardless of where the child was born.
+
+# Some data are suppressed 
+A missing value is reported for counties with fewer than 10 low birth weight births in the time frame.
+
+# Caution should be used when comparing these estimates across years
+Updates to race categories in the 2024 Annual Data Release mean that comparisons with previous years should be made with caution.
+
+# Numerator 
+The numerator is the number of live births for which the infant weighed less than 2,500 grams (approximately 5 lbs., 8 oz.) over seven years.
+
+# Denominator 
+The denominator is the total number of live births for which weight was recorded over seven years.
+
+# Website to downloaded data 
+https://wonder.cdc.gov/natality-current.html
+
+# Directions
+(The following steps are good to check internal calculations. But, actual calculation and duplication should use requested NCHS data.)
+
+Select the most recent 7 years.
+
+Select the appropriate geographic area and years. 
+
+Group results by county. For Low Birth Weight births selects births 0-2499 grams. For all births (denominator) select all birth weights with the exception of those missing weight. 
+
+CHR&R calculates data from raw NCHS databases and this matches CDC WONDER data. 
+
+All raw NCHS birth data is saved on an external hard drive because it requiers a DUA. 
+
+For the 2026 release, we use years 2018-2024 from NCHS. 
+
+# How are the subgroup data for this measure calculated?
+We use the 1997 OMB race groups, defined as follows:
+
+if MRACEHISP = 1 then race= 'Non-Hispanic White (only)' 
+if MRACEHISP = 2 then race= 'Non-Hispanic Black (only)' 
+if MRACEHISP = 3 then race= 'Non-Hispanic AIAN (only)'
+if MRACEHISP = 4 then race= 'Non-Hispanic Asian (only)' 
+if MRACEHISP = 5 then race= 'Non-Hispanic NHOPI (only)' 
+if MRACEHISP = 6 then race= 'Non-Hispanic more than one race'
+if MRACEHISP = 7 then race= 'Hispanic' 
+
+
+# import packages
+
+```{r}
+library(tidyverse)
+library(haven)
+library(here)
+```
+
+
+### standard county and state fips
+
+The final dataset will need to be aligned with standard FIPS codes and to include all counties and states.
+
+```{r}
+fips <-  bind_rows(
+  read_sas(here("inputs/county_fips_with_ct_old.sas7bdat")) ,
+  read_sas(here("inputs/state_fips.sas7bdat")))  %>% 
+  arrange(statecode, countycode) %>% 
+  glimpse()
+```
+
+
+# load natality data 
+```{r}
+
+nat18 = readr::read_fwf("E:/CHRR/natality raw/rawdata/NATL2018US.AllCnty.txt", 
+                         col_positions = readr::fwf_cols(bw = c(511), mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+
+nat19 = readr::read_fwf("E:/CHRR/natality raw/rawdata/nat2019us.AllCnty.txt", 
+                         col_positions = readr::fwf_cols(bw = c(511), mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+
+nat20 = readr::read_fwf("E:/CHRR/natality raw/rawdata/NATL2020us.AllCnty.txt", 
+                         col_positions = readr::fwf_cols(bw = c(511), mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+
+nat21 = readr::read_fwf("E:/CHRR/natality raw/rawdata/nat2021us.AllCnty.txt", 
+                         col_positions = readr::fwf_cols(bw = c(511), mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+
+nat22 = readr::read_fwf("E:/CHRR/natality raw/rawdata/NATL2022US.AllCnty.txt", 
+                         col_positions = readr::fwf_cols(bw = c(511), mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+
+nat23 = readr::read_fwf("E:/CHRR/natality raw/rawdata/nat2023us.AllCnty.txt", 
+                         col_positions = readr::fwf_cols(bw = c(511), mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+
+nat24 = readr::read_fwf("E:/CHRR/natality raw/rawdata/nat2024us.AllCounties.txt", 
+                         col_positions = readr::fwf_cols(bw = c(511), mracehisp = c(117), county_fips = c(91, 93), state = c(89,90), mage = c(79)))
+
+
+nat = list(nat18, nat19, nat20, nat21, nat22, nat23, nat24)
+
+#remove births with mother's residence American Samoa, Guam, Northern Marianas, Puerto Rico, Virgin Islands, not applicable, and not classified ;
+nat_fixed = lapply(nat, function(x) x %>% filter(!(state %in% c("AS", "GU", "MP", "PR", "VI", "XX", "ZZ", "AB", "BC", "MB", "NB", "ON", "QC", "SK", "ZZ")) & !(county_fips %in% c("000", "999"))) %>% mutate(birth = 1))
+
+#sum across race/eth and county 
+nat_fixed_sum = lapply(nat_fixed, function(x) x %>% group_by(state, county_fips, mracehisp, bw) %>% summarise(tbirth = sum(birth)))
+
+#convert list into a single dataframe w numeric cols 
+nat_all = nat_fixed_sum %>% reduce(full_join, by = c("state", "county_fips", "mracehisp", "bw")) 
+nat_all= data.frame(nat_all)
+nat_all[5:11] <- sapply(nat_all[5:11],as.numeric)
+
+
+# get total number of births across all seven years 
+nat_all$birthsums = rowSums(nat_all[5:11], na.rm = TRUE)
+
+#get state codes with abbrevs 
+state = tigris::fips_codes %>% select(state, state_code) %>% distinct()
+
+nat_all_state = merge(nat_all, state, by = "state")
+
+
+#remove all bw=4 rows since bw=4 indicates that weight was not recorded 
+nat_all_state = nat_all_state %>% filter(state != "VI") %>% filter(bw !=4 & !is.na(bw)) %>% select("state_code", "county_fips", "mracehisp", "birthsums", "bw") 
+
+
+#fix some fips that changed: 
+# 02270, 46113, 51515
+
+nat_all_state_fixed = nat_all_state %>% mutate(county_fips = case_when(
+      state_code =="46" & county_fips =='113' ~'102',
+      state_code =='02' & county_fips =='270' ~'158',
+      state_code =='51' & county_fips =='515' ~'019',
+      TRUE ~ county_fips
+      ))
+
+#get county and race specific numerators and denominators 
+lbw_num_denom = nat_all_state_fixed %>% group_by(state_code, county_fips, mracehisp) %>% 
+  summarize(num = sum(birthsums[bw %in% c(1,2)], na.rm = TRUE),
+            denom = sum(birthsums, na.rm = TRUE))
+
+
+
+
+
+```
+
+
+# calculate state and national numerators and denominators 
+```{r}
+#state
+statesums = nat_all_state_fixed %>% group_by(state_code, mracehisp) %>% 
+  summarize(num = sum(birthsums[bw %in% c(1, 2)], na.rm = TRUE),
+            denom = sum(birthsums, na.rm = TRUE))
+statesums$county_fips = "000"
+
+#national 
+natsum = nat_all_state_fixed %>% group_by(mracehisp) %>% 
+  summarize(num = sum(birthsums[bw %in% c(1,2)], na.rm = TRUE),
+            denom = sum(birthsums, na.rm = TRUE))
+natsum$state_code = "00" 
+natsum$county_fips = "000"
+
+lbw_all = rbind(lbw_num_denom, statesums, natsum)
+
+
+lbw_all$num = ifelse(lbw_all$num < 10, NA, lbw_all$num)
+
+lbw_all$racerecode = ifelse(lbw_all$mracehisp == 1, "white", 
+                           ifelse(lbw_all$mracehisp == 2, "black",
+                           ifelse(lbw_all$mracehisp == 3, "aian",
+                            ifelse(lbw_all$mracehisp == 4, "asian",
+                            ifelse(lbw_all$mracehisp == 5, "nhopi",
+                            ifelse(lbw_all$mracehisp == 6, "tom",
+                            ifelse(lbw_all$mracehisp == 7, "hispanic", "")))))))
+
+
+```
+
+# Calculate rates and confidence intervals 
+The methods for calculating the error associated with measures of natality can be found here:
+
+https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Dataset_Documentation/DVS/natality/UserGuide2014.pdf
+
+Since Low Birth Weight is measured as a percentage of all live births we are able to calculate the 95% error margins using the following equations:
+
+95% high=county estimate+1.96*sqrt((1-county estimate)*(county estimate)/number of births)
+
+95% low=county estimate-1.96*sqrt((1-county estimate)*(county estimate)/number of births)
+
+
+```{r}
+
+lbw_all$rate = lbw_all$num/ lbw_all$denom
+
+#calculate CIs
+#need standard error first 
+#rse of a proportion = sqrt(p*(1-p)/n) / p 
+
+lbw_all = lbw_all %>% group_by(state_code, county_fips, racerecode) %>% 
+  mutate(rse = sqrt(rate*(1-rate)/ denom)/rate)
+
+lbw_all_cis = lbw_all %>% 
+  mutate(lci = #ifelse(!(num %in% 10:19), #at one time, admin said to suppress CIs when 10-19 lbw births but GL and i decided that this does not make sense!  
+           rate - 1.96*sqrt((1-rate)*rate/denom), 
+         uci = #ifelse(!(num %in% 10:19), 
+           rate + 1.96*sqrt((1-rate)*rate/denom), 
+         unreliable = ifelse(rse >0.2 | num <20, 1, 0))
+
+
+lbw_all_wide = lbw_all_cis %>% select(state_code, county_fips, racerecode, num, denom, rate, lci, uci, unreliable) %>% 
+  pivot_wider(id_cols = c("state_code", "county_fips"), names_from = racerecode, values_from = c(num, denom, rate, lci, uci, unreliable))
+#im intentionally leaving my column names this way so I can more easily compare with Ganhua 
+
+
+
+```
+
+
+# create final dataset 
+```{r}
+# add fipscodes and change some column names 
+v037 = merge(fips, lbw_all_wide, by.x = c("statecode", "countycode"), by.y = c("state_code", "county_fips"), all.x = TRUE)%>%
+  # 1. Drop num / denom columns and junk columns
+  select(
+    statecode,
+    countycode,
+    starts_with("rate_"),
+    starts_with("lci_"),
+    starts_with("uci_")
+  ) %>%
+  
+  # 2. Remove the empty "_" race columns
+  select(-matches("_(^$|_$)")) %>%
+  
+  # 3. Rename rate columns
+  rename_with(
+    ~ sub("^rate_", "v037_race_", .x),
+    starts_with("rate_")
+  ) %>%
+  
+  # 4. Rename LCI columns
+  rename_with(
+    ~ sub("^lci_(.*)$", "v037_race_\\1_cilow", .x),
+    starts_with("lci_")
+  ) %>%
+  
+  # 5. Rename UCI columns
+  rename_with(
+    ~ sub("^uci_(.*)$", "v037_race_\\1_cihigh", .x),
+    starts_with("uci_")
+  ) 
+```
+
+
+
+
+Now compare and verify calculations 
+```{r}
+source(here("scripts/nchs_measure_helpers.R"))
+compare_subgroup("v037", v037, 2026)
+```
+
+
+
+
+
+#save to project 
+```{r}
+readr::write_csv(v037, file = here("measure_datasets/v037_otherdata_R2026.csv"))
+
+```
+
+
+
+
+
+
+
