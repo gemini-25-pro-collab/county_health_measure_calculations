@@ -281,7 +281,7 @@ run;
 
 /* calculating the measure with supression criteria. 
 v004_rawalternatevalue is the ratio (this measure is displayed as a ratio on our website).
-If a county has a population greater than 2,000 and 0 primary care providers, the county’s v004
+If a county has a population greater than 2,000 and 0 primary care providers, the countyÂ’s v004
 value is set to missing. Becuase of errors with division by 0 for the rawalternatevalue, if a county pop 
 is less than 2000 and has 0 primary care providers, the rawalternatevalue is missing. On the website, the
 measure value will display as a ratio that looks like denominator:0. */
