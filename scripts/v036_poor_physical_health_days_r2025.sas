@@ -11,11 +11,11 @@
 /* V036 – Poor Physical Health Days
 
 Measure v036:
-State: file = "Estimates_2022_CHRR_final.xlsx"
+State: file = "Copy of Estimates_2022_CHRR_final.xlsx"
 sheet = "State_direct_estimates"
 Variables: "pday", "pday_LCL", "pday_UCL"
 
-County: file = "Estimates_2022_CHRR_final.xlsx"
+County: file = "Copy of Estimates_2022_CHRR_final.xlsx"
 sheet = "County_modelled_estimates"
 Variables: "pday", "pctlpday2_5 ", and "pctlpday97_5" */
 
@@ -81,7 +81,7 @@ run;
 
 PROC IMPORT
 OUT= v036_state
-DATAFILE= "C:\Users\mburdine\Desktop\Duplications\Data\v036_42_49\Estimates4CHRR_2022_Final.xlsx"
+DATAFILE= "P:\CH-Ranking\Data\2025\1 Raw Data\BRFSS\Copy of Estimates4CHRR_2022_Final.xlsx"
 DBMS= xlsx REPLACE;
 sheet="State_estimates";
 getnames=yes;
@@ -133,7 +133,7 @@ proc sort data = v036_countystate;
 by statecode countycode;
 run;
 
-libname savetoexport "C:\Users\mburdine\Desktop\Dups";
+libname savetoexport "P:\CH-Ranking\Data\2025\3 Data calculated needs checking";
 
 Data savetoexport.&measureID.;
 set v036_countystate_3;
