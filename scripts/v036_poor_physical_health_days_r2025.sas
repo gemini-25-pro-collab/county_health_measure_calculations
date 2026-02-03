@@ -35,9 +35,10 @@ Variables: "pday", "pctlpday2_5 ", and "pctlpday97_5" */
 
 /**/
 
+*NOTE: These data are requested directly from PLACES and are not publicly available;
 PROC IMPORT
 OUT= v036_county
-DATAFILE= "C:\Users\mburdine\Desktop\Duplications\Data\v036_42_49\Estimates4CHRR_2022_Final.xlsx"
+DATAFILE= "P:\CH-Ranking\Data\2025\1 Raw Data\BRFSS\Copy of Estimates4CHRR_2022_Final.xlsx"
 DBMS=xlsx REPLACE; 
 GETNAMES=YES;
 RUN;
