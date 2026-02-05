@@ -11,11 +11,11 @@
 /* V042 – Poor Mental Health Days
 
 Measure v042:
-State: file = "Estimates_2022_CHRR_final.xlsx"
+State: file = "Copy of Estimates_2022_CHRR_final.xlsx"
 sheet = "State_direct_estimates"
 Variables: "mday", "mday_LCL", "mday_UCL"
 
-County: file = "Estimates_2022_CHRR_final.xlsx"
+County: file = "Copy of Estimates_2022_CHRR_final.xlsx"
 sheet = "County_modelled_estimates"
 Variables: "mday", "pctlmday2_5 ", and "pctlmday97_5" */
 
@@ -35,9 +35,10 @@ Variables: "mday", "pctlmday2_5 ", and "pctlmday97_5" */
 
 /**/
 
+*NOTE: These data are requested directly from PLACES and are not publicly available;
 PROC IMPORT
 OUT= v042_county
-DATAFILE= "C:\Users\mburdine\Desktop\Duplications\Data\v036_42_49\Estimates4CHRR_2022_Final.xlsx"
+DATAFILE= "P:\CH-Ranking\Data\2025\1 Raw Data\BRFSS\Copy of Estimates4CHRR_2022_Final.xlsx"
 DBMS=xlsx REPLACE; 
 GETNAMES=YES;
 RUN;
@@ -80,7 +81,7 @@ run;
 
 PROC IMPORT
 OUT= v042_state
-DATAFILE= "C:\Users\mburdine\Desktop\Duplications\Data\v036_42_49\Estimates4CHRR_2022_Final.xlsx"
+DATAFILE= "P:\CH-Ranking\Data\2025\1 Raw Data\BRFSS\Copy of Estimates4CHRR_2022_Final.xlsx"
 DBMS= xlsx REPLACE;
 sheet="State_estimates";
 getnames=yes;
@@ -132,7 +133,7 @@ proc sort data = v042_countystate;
 by statecode countycode;
 run;
 
-libname savetoexport "C:\Users\mburdine\Desktop\Dups";
+libname savetoexport "P:\CH-Ranking\Data\2025\3 Data calculated needs checking";
 
 Data savetoexport.&measureID.;
 set v042_countystate_3;
