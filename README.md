@@ -5,7 +5,7 @@ This repository is a work in progress. It contains code and data to replicate so
 At this time, we do not plan to make historical calculations public - this repo may be useful for replicating parts of the 2025 and 2026 releases and for adapting CHR&R methods for future analyses. 
 
 ## Contributions are welcome!
-This repository is intended to support transparency and collaboration. Contributions are welcome from anyone interested in replicating, extending, or improving these calculations. If these scripts are adapted or expanded for other analyses, contributions back to this repository are encouraged. Helpful contributions include adding scripts to calculate new measures of county-level health and equity, updating existing scripts for new data releases, and improving documentation to support reproducibility. Please see the [Contribution Guidelines]([https://countyhealthrankings.github.io/welcome/contribute.html]) for more information on how to get involved. 
+This repository is intended to support transparency and collaboration. Contributions are welcome from anyone interested in replicating, extending, or improving these calculations. If these scripts are adapted or expanded for other analyses, contributions back to this repository are encouraged. Helpful contributions include adding scripts to calculate new measures of county-level health and equity, updating existing scripts for new data releases, and improving documentation to support reproducibility. Please see the [Contribution Guidelines](https://countyhealthrankings.github.io/welcome/contribute.html) for more information on how to get involved. 
 
 ## Repository Structure
   
