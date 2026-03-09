@@ -1,0 +1,86 @@
+---
+title: "v178 Census Participation"
+author: "how"
+format: html
+editor: visual
+---
+
+## Description 
+Percentage of all households that self-responded to the 2020 census (by internet, paper questionnaire or telephone).
+
+## Numerator
+The numerator is the total number of households that self-responded to the 2020 census by internet, paper questionnaire or telephone. This includes those who responded before the 2020 census concluded October 15, 2020.
+
+
+## Denominator 
+The denominator is the total number of addresses on record with the 2020 census.
+
+## Data download link
+https://www2.census.gov/programs-surveys/decennial/2020/data/operational-quality-metrics/census-operational-quality-metrics-release_4.xlsx
+
+NOTE: this measure assesses participation in the decennial census. Therefore it was last updated for 2020 and will not be updated again until after the next decennial census in 2030. The first CHR&R release to include this measure was the 2023 release year. For all subsequent releases after 2023, the same data have been carried forward.   
+
+## Calculating this measure 
+Download document: 2020 Census Data Quality Operational Metrics: Release 4 (October 2022)
+
+Use variable: “Resolution of Housing Unit Enumeration Percent Addresses (including Deletes) Resolved as: Self-Response”.
+
+No calculations needed as this variable is calculated by the data source. 
+
+No state values are available. 
+
+
+### import standard packages
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(haven)
+library(stringr)
+library(here)
+```
+
+
+
+### standard county and state fips
+
+The final dataset will need to be aligned with standard FIPS codes and to include all counties and states.
+
+```{r}
+fips <-  bind_rows(
+  read_sas(here("inputs/county_fips_with_ct_old.sas7bdat")) ,
+  read_sas(here("inputs/state_fips.sas7bdat")))  %>% 
+  arrange(statecode, countycode) %>% 
+  glimpse()
+```
+
+
+
+### load raw data
+
+```{r}
+census_part = read_xlsx(here("raw_data/USCB/census-operational-quality-metrics-release_4.xlsx"),
+                      skip=1)
+
+census_part$response_rate = as.numeric(census_oqm$`Self-Response`)
+```
+
+### merge fipscodes in 
+```{r}
+census_part_fips = merge(fips, census_part, by.x = c("statecode", "countycode"), by.y = c("State", "County"), all.x = TRUE)
+
+```
+
+### a little clean up 
+```{r}
+v178 = census_part_fips %>% select(statecode, countycode, response_rate) %>% 
+  rename(v178_rawvalue = response_rate)
+```
+
+
+### save measure dataset 
+
+```{r}
+write.csv(v178, here("measure_datasets/v178_r2025.csv"), row.names = FALSE)
+```
+
