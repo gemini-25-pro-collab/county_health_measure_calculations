@@ -17,7 +17,7 @@ This repository is intended to support transparency and collaboration. Contribut
 
 * **`scripts/`** – R scripts (`.qmd`, `.Rmd`) and some SAS files for data cleaning, calculation, and formatting of measures.
   
-* * **`measure_datasets/`** – Datasets with calculated values for specific health measures.  
+* **`measure_datasets/`** – Datasets with calculated values for specific health measures.  
 
 We recommend using the `haven` R package to read `.sas7bdat` files in R. 
 
