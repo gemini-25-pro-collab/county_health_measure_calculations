@@ -1,0 +1,125 @@
+---
+title: "v175 Core Based Statistical Areas"
+author: "Hannah Olson-Williams"
+output: html_document
+---
+
+# Description 
+County Core Based Statistical Area designation
+
+# Data Source 
+OMB Metropolitan and Micropolitan statistical areas, Census Bureau
+
+# Getting the data 
+The July 2023 file (https://www.census.gov/geographies/reference-files/time-series/demo/metro-micro/delineation-files.html) contains CBSA metropolitan/micropolitan designations for each county. Use the March 2020 CBSA metropolitan/micropolitan file (https://www.census.gov/geographies/reference-files/time-series/demo/metro-micro/historical-delineation-files.html) to assign metropolitan/micropolitan designations to the 8 old counties in Connecticut.
+
+# How do we calculate this measure?
+For Release 2025, both the old and new CT counties were retained for the dataset. The data for the old CT counties is from the March 2020 CBSA metropolitan/micropolitan file and the data for the new CT counties is from the July 2023 file. 
+
+The July 2023 file (https://www.census.gov/geographies/reference-files/time-series/demo/metro-micro/delineation-files.html) contains CBSA metropolitan/micropolitan designations for each county and includes the 9 new CT planning regions. Use the March 2020 CBSA metropolitan/micropolitan file (https://www.census.gov/geographies/reference-files/time-series/demo/metro-micro/historical-delineation-files.html) to assign metropolitan/micropolitan designations to the 8 old counties in Connecticut.
+
+Use column "Metropolitan/Micropolitan Statistical Area" column to assign each county a numeric code:
+
+2: metropolitan
+
+1: micropolitan
+
+0: rural (ie no CBSA specification) 
+
+The numeric value (0, 1, 2) is saved as v175_rawvalue while the text descriptor value (Metropolitan, Micropolitan, or Rural) is saved as v175_cbsa_name. 
+
+Note that all state and national values should be left as NA/missing. 
+
+# notes 
+Metropolitan and micropolitan statistical areas based on the 2020 standards and Census Bureau data were delineated in July of 2023. These areas are used for the Release 2025 county descriptors in every state and include the new planning regions in CT.
+
+The March 2020 metropolitan and micropolitan statistical areas based on the 2010 standards and Census Data were used for the old counties in CT, becuase the March 2020 data contains the 8 old Connecticut counties while the July 2023 data contains the 9 new Connecticut Planning Districts. 
+
+
+# import packages
+
+```{r}
+library(tidyverse)
+library(haven)
+library(here)
+```
+
+
+### standard county and state fips
+
+The final dataset will need to be aligned with standard FIPS codes and to include all counties and states.
+
+```{r}
+fips <-  bind_rows(
+  read_sas(here("inputs/county_fips_with_ct_old.sas7bdat")) ,
+  read_sas(here("inputs/state_fips.sas7bdat")))  %>% 
+  arrange(statecode, countycode) %>% 
+  glimpse()
+```
+
+# Load raw data 
+First grab the 2023 data 
+
+```{r}
+cbsa23 = read_xlsx(here("raw_data/USCB/list1_2023.xlsx"), skip = 2)
+```
+
+
+Then grab the 2020 data for legacy connecticut designations 
+```{r}
+cbsa20= read_xls(here("raw_data/USCB/list1_2020.xls"), skip = 2)
+
+ct = cbsa20 %>% filter(`FIPS State Code` == "09")
+```
+
+Add the 2020 CT designations to the 2023 designations 
+```{r}
+cbsa = rbind(cbsa23, ct)
+```
+
+
+
+# Some reformatting 
+```{r}
+cbsa = cbsa %>% rename(statecode = `FIPS State Code`, 
+                    countycode = `FIPS County Code`, 
+                    metmic = `Metropolitan/Micropolitan Statistical Area`) %>% 
+  select(statecode, countycode, metmic) 
+
+cbsa$statecode = stringr::str_pad(cbsa$statecode, side = "left", pad = "0", width = 2)
+cbsa$countycode = stringr::str_pad(cbsa$countycode, side = "left", pad = "0", width = 3)
+
+# create the numeric category 
+cbsa$metmiccode = ifelse(grepl("Metro", cbsa$metmic), 2, 
+                        ifelse(grepl("Micro", cbsa$metmic), 1, 0))
+
+```
+
+
+# add standardized fipscodes and rename  
+```{r}
+# set counties with missing designations to rural/0 
+# make sure that state values are NA (ie when countycode = 000) 
+v175_cbsa = merge(fips, cbsa, by = c("statecode", "countycode"), all.x = TRUE) %>% 
+  mutate(v175_rawvalue = ifelse(is.na(metmiccode) & countycode != "000", 0, metmiccode),
+         v175_cbsa_name = ifelse(is.na(metmic)& countycode != "000", "Rural", metmic)) %>% 
+  select(statecode, countycode, v175_rawvalue, v175_cbsa_name)
+
+# confirm that join is good (only PR places did not merge - this is correct) 
+anti = anti_join(cbsa, fips, by = c("statecode", "countycode"))
+
+
+```
+
+
+
+
+#save to project 
+```{r}
+readr::write_csv(v175_cbsa, file = here("measure_datasets/v175_R2025.csv"))
+
+```
+
+
+
+

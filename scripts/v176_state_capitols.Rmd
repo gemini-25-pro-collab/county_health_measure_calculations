@@ -164,21 +164,9 @@ v176 <- v176 %>%
 
 
 
-# compare 
-```{r}
-jj = haven::read_sas("P:/CH-Ranking/Data/2025/6 Measure Datasets/Additional Measures/v176.sas7bdat")
-
-jh = merge(jj, v176, by = c("statecode", "countycode"))
-
-mismatch = jh %>% filter(!is.na(v176_rawvalue.x) & is.na(v176_rawvalue.y) | 
-                          is.na(v176_rawvalue.x) & !is.na(v176_rawvalue.y) |
-                           v176_rawvalue.x != v176_rawvalue.y)
-```
-
-
 #save to project 
 ```{r}
-readr::write_csv(v176, file = here("measure_datasets/v176_state_capitols_R2025.csv"))
+readr::write_csv(v176, file = here("measure_datasets/v176_R2025.csv"))
 
 ```
 
