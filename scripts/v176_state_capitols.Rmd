@@ -1,0 +1,187 @@
+---
+title: "v176 state capitols"
+author: "Hannah Olson-Williams"
+output: html_document
+---
+
+# Description 
+Indicator of whether a county is part of a state capitol city.
+
+# Data Source 
+ArcGIS Online; Living Atlas USA Major Cities
+
+# Getting the data 
+A list of state capitals can be downloaded from the ESRI Living Atlas (may need to login through a university account to access). Capitols are then saved as a binary.
+
+1: state capitol
+0: not a capitol  
+
+USA Major Cities csv file: https://uw-mad.maps.arcgis.com/home/item.html?id=f5065ea8cd864591b14ece9c7d0c8cc9
+
+# How do we calculate this measure?
+For Rankings 2025, the only update to this dataset was to add the new CT planning regions (county equivalents) and the name of the CT capitol city within it's respective planning region. Jess did a visual inspection of the capitol city boundary and the CT planning region boundaries in ArcGIS Pro to confirm what planning region the capitol city falls within. 
+
+For Rankings 2024, the only update to this dataset was to add the two new AK counties (02063 and 02066) and delete the old AK county (02261). The AK state capital is not in either of these counties. No new calculations were performed. 
+
+Started with the assumption that all or most state capitals are Incorporated Places (Honolulu, HI, is the exception - the state capital is a Census Designated Place and not really a separate entity from Honolulu County). 
+Esri USA Major Cities dataset contains large cities and all state capitals. The names and boundaries come from the US Census Bureau 2020 TIGER FGDB (National Sub-State). The "Capitol" field has a value of "State" to indicate whether a city is a state capitol. 
+
+State capitols were then joined to their boundaries via ArcGIS Pro. 49 state capitals from the Esri Major Cities dataset joined to a 2020 Incorporated Place boundary based on Place code. 1 state capital (Honolulu) joined to a 2020 Census Designated Place boundary based on Place code. 
+All state capitol boundaries were merged into one dataset and intersected with the 2019 TIGER/Line county boundaries. 
+Some counties were retained in the resulting intersection that just barely overlapped with a city boundary. These counties were removed based on a visual analysis. 
+Counties that intersected/overlapped with a state capitol Place were assigned a raw_value of "1" and all other counties were "0".
+
+# import packages
+
+```{r}
+library(tidyverse)
+library(haven)
+library(here)
+```
+
+
+### standard county and state fips
+
+The final dataset will need to be aligned with standard FIPS codes and to include all counties and states.
+
+```{r}
+fips <-  bind_rows(
+  read_sas(here("inputs/county_fips_with_ct_old.sas7bdat")) ,
+  read_sas(here("inputs/state_fips.sas7bdat")))  %>% 
+  arrange(statecode, countycode) %>% 
+  glimpse()
+```
+
+# Load raw data 
+Comes from arcgis (may need to log in thru university account to download)
+https://www.arcgis.com/home/item.html?id=9df5e769bfe8412b8de36a2e618c7672
+
+```{r}
+esri_raw = read.csv(here("raw_data/ESRI/USA Major Cities_0.csv"))
+```
+
+
+# some formatting 
+```{r}
+# get capitals only and reformat fipscodes 
+esri_cap = esri_raw %>% filter(Capital == "State") %>% 
+  mutate(place_fips = stringr::str_pad(Place.FIPS, side = "left", pad = 0, width = 7), 
+         statecode = stringr::str_pad(State.FIPS, side = "left", pad = 0, width = 2))
+```
+
+
+# add in all counties 
+Note: we need placecodes which are not standard at CHRR. I'm pulling them into R from the census api. 
+```{r}
+stabb = tolower(unique(esri_cap$State.Abbreviation))
+stfips = unique(esri_cap$statecode)
+
+allstates = data.frame()
+
+# we need to get the place fipscodes which are not available in standard CHRR fipscodes. here i'm pulling the place codes from Census 
+for (i in 1:length(stabb)) {
+st = read.delim(paste0("https://www2.census.gov/geo/docs/reference/codes/files/st", stfips[i], "_", stabb[i], "_places.txt"), sep = "|", header = FALSE)
+st$statecode = stringr::str_pad(st[,2], 2, "left", "0")
+st$placecode = stringr::str_pad(st[,3], 5, "left", "0")
+st$stpl_fips = paste0(st$statecode, st$placecode) # this matches whats in the esri_cap dataset 
+colnames(st) = c("stabb", "v2", "v3", "placename", "v5","v6","countyname", "statecode", "placecode","stpl_fips")
+allstates = rbind(st, allstates)
+}
+as = allstates[,c("stabb", "placename", "countyname", "statecode", "placecode", "stpl_fips")]
+esri_all = merge(esri_cap, as, by.x = "place_fips", by.y = "stpl_fips", all.x = TRUE)
+
+#check the join - should be 0 if all matched correctly 
+anti = dplyr::anti_join(esri_cap, as,  by = c("place_fips"="stpl_fips")) #all match 
+
+
+```
+
+
+
+# add in county fipscodes 
+```{r}
+# since we don't have countycodes in the esri data, we need to merge by county name which requires some text field cleaning and standardization 
+esri_all =esri_all %>% mutate(countyname = strsplit(countyname, ",")) %>% 
+  unnest(countyname)
+
+esri_all$countyname = trimws(esri_all$countyname)
+esri_all$countyname[grepl("Ana", esri_all$countyname)] = "Dona Ana County"
+esri_all$countyname[grepl("Anchorage", esri_all$countyname)] = "Anchorage Borough"
+esri_all$countyname[grepl("Juneau", esri_all$countyname)] = "Juneau Borough"
+esri_all$cap = 1 # set binary to indicate that these counties contain cap cities 
+
+cap_fips <- fips %>%
+  left_join(esri_all,
+            by = c("county" = "countyname",
+                   "state" = "State.Abbreviation"))
+# verify that none were incorrectly dropped during the merge - this dataset should have 0 rows if correct merge occurred 
+anti = anti_join(esri_all,fips, by = c("countyname" = "county", "State.Abbreviation" = "state"))
+
+#remove dups (but make sure DC doesn't accidentally get deleted) 
+cap_fips <- cap_fips %>%
+  filter(
+    !duplicated(select(., county, state)) |
+    (statecode == "11")
+  )
+```
+
+# some clean up and renaming 
+```{r}
+v176 = cap_fips %>% 
+  mutate(v176_rawvalue = ifelse(cap == 1, 1, 0)) %>% 
+  rename(v176_capitol_name = Name) %>% 
+  select(statecode, countycode, v176_rawvalue,v176_capitol_name)
+```
+
+# add in CT capitol
+when Connecticut switched to planning regions, we manually assigned the capitol city to county 09110 based on a visual inspection 
+```{r}
+v176 <- v176 %>% 
+  mutate(
+    v176_capitol_name = ifelse(statecode == "09" & countycode == "110",
+                               "Hartford",
+                               v176_capitol_name),
+    v176_rawvalue = ifelse(statecode == "09" & countycode == "110",
+                           1,
+                           v176_rawvalue)
+  )
+```
+
+# correct Lansing MI 
+based on what we read in wikipedia (https://en.wikipedia.org/wiki/Lansing,_Michigan) as well as a visual inspection, capitol city Lansing MI should be assigned to three counties, including Ingham, Eaton, and Clinton. Therefore, we manually added county 26037 
+
+```{r}
+v176 <- v176 %>% 
+  mutate(
+    v176_capitol_name = ifelse(statecode == "26" & countycode == "037",
+                               "Lansing",
+                               v176_capitol_name),
+    v176_rawvalue = ifelse(statecode == "26" & countycode == "037",
+                           1,
+                           v176_rawvalue)
+  )
+```
+
+
+
+# compare 
+```{r}
+jj = haven::read_sas("P:/CH-Ranking/Data/2025/6 Measure Datasets/Additional Measures/v176.sas7bdat")
+
+jh = merge(jj, v176, by = c("statecode", "countycode"))
+
+mismatch = jh %>% filter(!is.na(v176_rawvalue.x) & is.na(v176_rawvalue.y) | 
+                          is.na(v176_rawvalue.x) & !is.na(v176_rawvalue.y) |
+                           v176_rawvalue.x != v176_rawvalue.y)
+```
+
+
+#save to project 
+```{r}
+readr::write_csv(v176, file = here("measure_datasets/v176_state_capitols_R2025.csv"))
+
+```
+
+
+
+
