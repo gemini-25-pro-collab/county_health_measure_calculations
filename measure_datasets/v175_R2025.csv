@@ -1,0 +1,3205 @@
+statecode,countycode,v175_rawvalue,v175_cbsa_name
+00,000,NA,NA
+01,000,NA,NA
+01,001,2,Metropolitan Statistical Area
+01,003,2,Metropolitan Statistical Area
+01,005,1,Micropolitan Statistical Area
+01,007,2,Metropolitan Statistical Area
+01,009,2,Metropolitan Statistical Area
+01,011,0,Rural
+01,013,0,Rural
+01,015,2,Metropolitan Statistical Area
+01,017,1,Micropolitan Statistical Area
+01,019,0,Rural
+01,021,2,Metropolitan Statistical Area
+01,023,0,Rural
+01,025,0,Rural
+01,027,0,Rural
+01,029,0,Rural
+01,031,1,Micropolitan Statistical Area
+01,033,2,Metropolitan Statistical Area
+01,035,0,Rural
+01,037,1,Micropolitan Statistical Area
+01,039,0,Rural
+01,041,0,Rural
+01,043,1,Micropolitan Statistical Area
+01,045,1,Micropolitan Statistical Area
+01,047,1,Micropolitan Statistical Area
+01,049,1,Micropolitan Statistical Area
+01,051,2,Metropolitan Statistical Area
+01,053,0,Rural
+01,055,2,Metropolitan Statistical Area
+01,057,0,Rural
+01,059,1,Micropolitan Statistical Area
+01,061,2,Metropolitan Statistical Area
+01,063,2,Metropolitan Statistical Area
+01,065,2,Metropolitan Statistical Area
+01,067,2,Metropolitan Statistical Area
+01,069,2,Metropolitan Statistical Area
+01,071,1,Micropolitan Statistical Area
+01,073,2,Metropolitan Statistical Area
+01,075,0,Rural
+01,077,2,Metropolitan Statistical Area
+01,079,2,Metropolitan Statistical Area
+01,081,2,Metropolitan Statistical Area
+01,083,2,Metropolitan Statistical Area
+01,085,2,Metropolitan Statistical Area
+01,087,2,Metropolitan Statistical Area
+01,089,2,Metropolitan Statistical Area
+01,091,0,Rural
+01,093,0,Rural
+01,095,1,Micropolitan Statistical Area
+01,097,2,Metropolitan Statistical Area
+01,099,0,Rural
+01,101,2,Metropolitan Statistical Area
+01,103,2,Metropolitan Statistical Area
+01,105,0,Rural
+01,107,2,Metropolitan Statistical Area
+01,109,1,Micropolitan Statistical Area
+01,111,0,Rural
+01,113,2,Metropolitan Statistical Area
+01,115,2,Metropolitan Statistical Area
+01,117,2,Metropolitan Statistical Area
+01,119,0,Rural
+01,121,1,Micropolitan Statistical Area
+01,123,1,Micropolitan Statistical Area
+01,125,2,Metropolitan Statistical Area
+01,127,2,Metropolitan Statistical Area
+01,129,0,Rural
+01,131,0,Rural
+01,133,0,Rural
+02,000,NA,NA
+02,013,0,Rural
+02,016,0,Rural
+02,020,2,Metropolitan Statistical Area
+02,050,0,Rural
+02,060,0,Rural
+02,063,0,Rural
+02,066,0,Rural
+02,068,0,Rural
+02,070,0,Rural
+02,090,2,Metropolitan Statistical Area
+02,100,0,Rural
+02,105,0,Rural
+02,110,1,Micropolitan Statistical Area
+02,122,0,Rural
+02,130,1,Micropolitan Statistical Area
+02,150,0,Rural
+02,158,0,Rural
+02,164,0,Rural
+02,170,2,Metropolitan Statistical Area
+02,180,0,Rural
+02,185,0,Rural
+02,188,0,Rural
+02,195,0,Rural
+02,198,0,Rural
+02,220,0,Rural
+02,230,0,Rural
+02,240,0,Rural
+02,275,0,Rural
+02,282,0,Rural
+02,290,0,Rural
+04,000,NA,NA
+04,001,0,Rural
+04,003,2,Metropolitan Statistical Area
+04,005,2,Metropolitan Statistical Area
+04,007,1,Micropolitan Statistical Area
+04,009,1,Micropolitan Statistical Area
+04,011,0,Rural
+04,012,0,Rural
+04,013,2,Metropolitan Statistical Area
+04,015,2,Metropolitan Statistical Area
+04,017,1,Micropolitan Statistical Area
+04,019,2,Metropolitan Statistical Area
+04,021,2,Metropolitan Statistical Area
+04,023,1,Micropolitan Statistical Area
+04,025,2,Metropolitan Statistical Area
+04,027,2,Metropolitan Statistical Area
+05,000,NA,NA
+05,001,0,Rural
+05,003,0,Rural
+05,005,1,Micropolitan Statistical Area
+05,007,2,Metropolitan Statistical Area
+05,009,1,Micropolitan Statistical Area
+05,011,0,Rural
+05,013,1,Micropolitan Statistical Area
+05,015,0,Rural
+05,017,0,Rural
+05,019,1,Micropolitan Statistical Area
+05,021,0,Rural
+05,023,0,Rural
+05,025,1,Micropolitan Statistical Area
+05,027,1,Micropolitan Statistical Area
+05,029,0,Rural
+05,031,2,Metropolitan Statistical Area
+05,033,2,Metropolitan Statistical Area
+05,035,2,Metropolitan Statistical Area
+05,037,0,Rural
+05,039,0,Rural
+05,041,0,Rural
+05,043,0,Rural
+05,045,2,Metropolitan Statistical Area
+05,047,0,Rural
+05,049,0,Rural
+05,051,2,Metropolitan Statistical Area
+05,053,2,Metropolitan Statistical Area
+05,055,1,Micropolitan Statistical Area
+05,057,0,Rural
+05,059,1,Micropolitan Statistical Area
+05,061,0,Rural
+05,063,1,Micropolitan Statistical Area
+05,065,0,Rural
+05,067,0,Rural
+05,069,1,Micropolitan Statistical Area
+05,071,0,Rural
+05,073,0,Rural
+05,075,0,Rural
+05,077,0,Rural
+05,079,0,Rural
+05,081,2,Metropolitan Statistical Area
+05,083,0,Rural
+05,085,2,Metropolitan Statistical Area
+05,087,2,Metropolitan Statistical Area
+05,089,0,Rural
+05,091,2,Metropolitan Statistical Area
+05,093,1,Micropolitan Statistical Area
+05,095,0,Rural
+05,097,0,Rural
+05,099,0,Rural
+05,101,1,Micropolitan Statistical Area
+05,103,1,Micropolitan Statistical Area
+05,105,2,Metropolitan Statistical Area
+05,107,0,Rural
+05,109,0,Rural
+05,111,2,Metropolitan Statistical Area
+05,113,0,Rural
+05,115,1,Micropolitan Statistical Area
+05,117,0,Rural
+05,119,2,Metropolitan Statistical Area
+05,121,0,Rural
+05,123,1,Micropolitan Statistical Area
+05,125,2,Metropolitan Statistical Area
+05,127,0,Rural
+05,129,0,Rural
+05,131,2,Metropolitan Statistical Area
+05,133,0,Rural
+05,135,0,Rural
+05,137,0,Rural
+05,139,1,Micropolitan Statistical Area
+05,141,0,Rural
+05,143,2,Metropolitan Statistical Area
+05,145,1,Micropolitan Statistical Area
+05,147,0,Rural
+05,149,1,Micropolitan Statistical Area
+06,000,NA,NA
+06,001,2,Metropolitan Statistical Area
+06,003,1,Micropolitan Statistical Area
+06,005,0,Rural
+06,007,2,Metropolitan Statistical Area
+06,009,0,Rural
+06,011,0,Rural
+06,013,2,Metropolitan Statistical Area
+06,015,1,Micropolitan Statistical Area
+06,017,2,Metropolitan Statistical Area
+06,019,2,Metropolitan Statistical Area
+06,021,0,Rural
+06,023,1,Micropolitan Statistical Area
+06,025,2,Metropolitan Statistical Area
+06,027,1,Micropolitan Statistical Area
+06,029,2,Metropolitan Statistical Area
+06,031,2,Metropolitan Statistical Area
+06,033,1,Micropolitan Statistical Area
+06,035,1,Micropolitan Statistical Area
+06,037,2,Metropolitan Statistical Area
+06,039,2,Metropolitan Statistical Area
+06,041,2,Metropolitan Statistical Area
+06,043,0,Rural
+06,045,1,Micropolitan Statistical Area
+06,047,2,Metropolitan Statistical Area
+06,049,0,Rural
+06,051,0,Rural
+06,053,2,Metropolitan Statistical Area
+06,055,2,Metropolitan Statistical Area
+06,057,1,Micropolitan Statistical Area
+06,059,2,Metropolitan Statistical Area
+06,061,2,Metropolitan Statistical Area
+06,063,0,Rural
+06,065,2,Metropolitan Statistical Area
+06,067,2,Metropolitan Statistical Area
+06,069,2,Metropolitan Statistical Area
+06,071,2,Metropolitan Statistical Area
+06,073,2,Metropolitan Statistical Area
+06,075,2,Metropolitan Statistical Area
+06,077,2,Metropolitan Statistical Area
+06,079,2,Metropolitan Statistical Area
+06,081,2,Metropolitan Statistical Area
+06,083,2,Metropolitan Statistical Area
+06,085,2,Metropolitan Statistical Area
+06,087,2,Metropolitan Statistical Area
+06,089,2,Metropolitan Statistical Area
+06,091,0,Rural
+06,093,0,Rural
+06,095,2,Metropolitan Statistical Area
+06,097,2,Metropolitan Statistical Area
+06,099,2,Metropolitan Statistical Area
+06,101,2,Metropolitan Statistical Area
+06,103,1,Micropolitan Statistical Area
+06,105,0,Rural
+06,107,2,Metropolitan Statistical Area
+06,109,1,Micropolitan Statistical Area
+06,111,2,Metropolitan Statistical Area
+06,113,2,Metropolitan Statistical Area
+06,115,2,Metropolitan Statistical Area
+08,000,NA,NA
+08,001,2,Metropolitan Statistical Area
+08,003,1,Micropolitan Statistical Area
+08,005,2,Metropolitan Statistical Area
+08,007,0,Rural
+08,009,0,Rural
+08,011,0,Rural
+08,013,2,Metropolitan Statistical Area
+08,014,2,Metropolitan Statistical Area
+08,015,0,Rural
+08,017,0,Rural
+08,019,2,Metropolitan Statistical Area
+08,021,1,Micropolitan Statistical Area
+08,023,1,Micropolitan Statistical Area
+08,025,0,Rural
+08,027,0,Rural
+08,029,0,Rural
+08,031,2,Metropolitan Statistical Area
+08,033,0,Rural
+08,035,2,Metropolitan Statistical Area
+08,037,1,Micropolitan Statistical Area
+08,039,2,Metropolitan Statistical Area
+08,041,2,Metropolitan Statistical Area
+08,043,1,Micropolitan Statistical Area
+08,045,1,Micropolitan Statistical Area
+08,047,2,Metropolitan Statistical Area
+08,049,0,Rural
+08,051,0,Rural
+08,053,0,Rural
+08,055,0,Rural
+08,057,0,Rural
+08,059,2,Metropolitan Statistical Area
+08,061,0,Rural
+08,063,0,Rural
+08,065,1,Micropolitan Statistical Area
+08,067,1,Micropolitan Statistical Area
+08,069,2,Metropolitan Statistical Area
+08,071,0,Rural
+08,073,0,Rural
+08,075,1,Micropolitan Statistical Area
+08,077,2,Metropolitan Statistical Area
+08,079,0,Rural
+08,081,1,Micropolitan Statistical Area
+08,083,0,Rural
+08,085,1,Micropolitan Statistical Area
+08,087,1,Micropolitan Statistical Area
+08,089,0,Rural
+08,091,0,Rural
+08,093,2,Metropolitan Statistical Area
+08,095,0,Rural
+08,097,1,Micropolitan Statistical Area
+08,099,0,Rural
+08,101,2,Metropolitan Statistical Area
+08,103,0,Rural
+08,105,0,Rural
+08,107,1,Micropolitan Statistical Area
+08,109,0,Rural
+08,111,0,Rural
+08,113,0,Rural
+08,115,0,Rural
+08,117,1,Micropolitan Statistical Area
+08,119,2,Metropolitan Statistical Area
+08,121,0,Rural
+08,123,2,Metropolitan Statistical Area
+08,125,0,Rural
+09,000,NA,NA
+09,001,2,Metropolitan Statistical Area
+09,003,2,Metropolitan Statistical Area
+09,005,1,Micropolitan Statistical Area
+09,007,2,Metropolitan Statistical Area
+09,009,2,Metropolitan Statistical Area
+09,011,2,Metropolitan Statistical Area
+09,013,2,Metropolitan Statistical Area
+09,015,2,Metropolitan Statistical Area
+09,110,2,Metropolitan Statistical Area
+09,120,2,Metropolitan Statistical Area
+09,130,2,Metropolitan Statistical Area
+09,140,2,Metropolitan Statistical Area
+09,150,1,Micropolitan Statistical Area
+09,160,1,Micropolitan Statistical Area
+09,170,2,Metropolitan Statistical Area
+09,180,2,Metropolitan Statistical Area
+09,190,2,Metropolitan Statistical Area
+10,000,NA,NA
+10,001,2,Metropolitan Statistical Area
+10,003,2,Metropolitan Statistical Area
+10,005,1,Micropolitan Statistical Area
+11,000,NA,NA
+11,001,2,Metropolitan Statistical Area
+12,000,NA,NA
+12,001,2,Metropolitan Statistical Area
+12,003,2,Metropolitan Statistical Area
+12,005,2,Metropolitan Statistical Area
+12,007,0,Rural
+12,009,2,Metropolitan Statistical Area
+12,011,2,Metropolitan Statistical Area
+12,013,0,Rural
+12,015,2,Metropolitan Statistical Area
+12,017,2,Metropolitan Statistical Area
+12,019,2,Metropolitan Statistical Area
+12,021,2,Metropolitan Statistical Area
+12,023,1,Micropolitan Statistical Area
+12,027,1,Micropolitan Statistical Area
+12,029,0,Rural
+12,031,2,Metropolitan Statistical Area
+12,033,2,Metropolitan Statistical Area
+12,035,2,Metropolitan Statistical Area
+12,037,0,Rural
+12,039,2,Metropolitan Statistical Area
+12,041,2,Metropolitan Statistical Area
+12,043,1,Micropolitan Statistical Area
+12,045,0,Rural
+12,047,0,Rural
+12,049,0,Rural
+12,051,1,Micropolitan Statistical Area
+12,053,2,Metropolitan Statistical Area
+12,055,2,Metropolitan Statistical Area
+12,057,2,Metropolitan Statistical Area
+12,059,0,Rural
+12,061,2,Metropolitan Statistical Area
+12,063,0,Rural
+12,065,2,Metropolitan Statistical Area
+12,067,0,Rural
+12,069,2,Metropolitan Statistical Area
+12,071,2,Metropolitan Statistical Area
+12,073,2,Metropolitan Statistical Area
+12,075,2,Metropolitan Statistical Area
+12,077,0,Rural
+12,079,0,Rural
+12,081,2,Metropolitan Statistical Area
+12,083,2,Metropolitan Statistical Area
+12,085,2,Metropolitan Statistical Area
+12,086,2,Metropolitan Statistical Area
+12,087,1,Micropolitan Statistical Area
+12,089,2,Metropolitan Statistical Area
+12,091,2,Metropolitan Statistical Area
+12,093,1,Micropolitan Statistical Area
+12,095,2,Metropolitan Statistical Area
+12,097,2,Metropolitan Statistical Area
+12,099,2,Metropolitan Statistical Area
+12,101,2,Metropolitan Statistical Area
+12,103,2,Metropolitan Statistical Area
+12,105,2,Metropolitan Statistical Area
+12,107,1,Micropolitan Statistical Area
+12,109,2,Metropolitan Statistical Area
+12,111,2,Metropolitan Statistical Area
+12,113,2,Metropolitan Statistical Area
+12,115,2,Metropolitan Statistical Area
+12,117,2,Metropolitan Statistical Area
+12,119,2,Metropolitan Statistical Area
+12,121,0,Rural
+12,123,0,Rural
+12,125,0,Rural
+12,127,2,Metropolitan Statistical Area
+12,129,2,Metropolitan Statistical Area
+12,131,2,Metropolitan Statistical Area
+12,133,2,Metropolitan Statistical Area
+13,000,NA,NA
+13,001,0,Rural
+13,003,1,Micropolitan Statistical Area
+13,005,0,Rural
+13,007,0,Rural
+13,009,1,Micropolitan Statistical Area
+13,011,0,Rural
+13,013,2,Metropolitan Statistical Area
+13,015,2,Metropolitan Statistical Area
+13,017,1,Micropolitan Statistical Area
+13,019,0,Rural
+13,021,2,Metropolitan Statistical Area
+13,023,0,Rural
+13,025,2,Metropolitan Statistical Area
+13,027,2,Metropolitan Statistical Area
+13,029,2,Metropolitan Statistical Area
+13,031,1,Micropolitan Statistical Area
+13,033,2,Metropolitan Statistical Area
+13,035,2,Metropolitan Statistical Area
+13,037,0,Rural
+13,039,1,Micropolitan Statistical Area
+13,043,0,Rural
+13,045,2,Metropolitan Statistical Area
+13,047,2,Metropolitan Statistical Area
+13,049,0,Rural
+13,051,2,Metropolitan Statistical Area
+13,053,2,Metropolitan Statistical Area
+13,055,1,Micropolitan Statistical Area
+13,057,2,Metropolitan Statistical Area
+13,059,2,Metropolitan Statistical Area
+13,061,0,Rural
+13,063,2,Metropolitan Statistical Area
+13,065,0,Rural
+13,067,2,Metropolitan Statistical Area
+13,069,1,Micropolitan Statistical Area
+13,071,1,Micropolitan Statistical Area
+13,073,2,Metropolitan Statistical Area
+13,075,0,Rural
+13,077,2,Metropolitan Statistical Area
+13,079,2,Metropolitan Statistical Area
+13,081,1,Micropolitan Statistical Area
+13,083,2,Metropolitan Statistical Area
+13,085,2,Metropolitan Statistical Area
+13,087,1,Micropolitan Statistical Area
+13,089,2,Metropolitan Statistical Area
+13,091,0,Rural
+13,093,0,Rural
+13,095,2,Metropolitan Statistical Area
+13,097,2,Metropolitan Statistical Area
+13,099,0,Rural
+13,101,2,Metropolitan Statistical Area
+13,103,2,Metropolitan Statistical Area
+13,105,0,Rural
+13,107,0,Rural
+13,109,1,Micropolitan Statistical Area
+13,111,0,Rural
+13,113,2,Metropolitan Statistical Area
+13,115,2,Metropolitan Statistical Area
+13,117,2,Metropolitan Statistical Area
+13,119,0,Rural
+13,121,2,Metropolitan Statistical Area
+13,123,0,Rural
+13,125,0,Rural
+13,127,2,Metropolitan Statistical Area
+13,129,1,Micropolitan Statistical Area
+13,131,1,Micropolitan Statistical Area
+13,133,0,Rural
+13,135,2,Metropolitan Statistical Area
+13,137,1,Micropolitan Statistical Area
+13,139,2,Metropolitan Statistical Area
+13,141,0,Rural
+13,143,2,Metropolitan Statistical Area
+13,145,2,Metropolitan Statistical Area
+13,147,0,Rural
+13,149,2,Metropolitan Statistical Area
+13,151,2,Metropolitan Statistical Area
+13,153,2,Metropolitan Statistical Area
+13,155,0,Rural
+13,157,1,Micropolitan Statistical Area
+13,159,2,Metropolitan Statistical Area
+13,161,0,Rural
+13,163,0,Rural
+13,165,0,Rural
+13,167,1,Micropolitan Statistical Area
+13,169,2,Metropolitan Statistical Area
+13,171,0,Rural
+13,173,2,Metropolitan Statistical Area
+13,175,1,Micropolitan Statistical Area
+13,177,2,Metropolitan Statistical Area
+13,179,2,Metropolitan Statistical Area
+13,181,2,Metropolitan Statistical Area
+13,183,2,Metropolitan Statistical Area
+13,185,2,Metropolitan Statistical Area
+13,187,2,Metropolitan Statistical Area
+13,189,2,Metropolitan Statistical Area
+13,191,2,Metropolitan Statistical Area
+13,193,0,Rural
+13,195,2,Metropolitan Statistical Area
+13,197,2,Metropolitan Statistical Area
+13,199,2,Metropolitan Statistical Area
+13,201,0,Rural
+13,205,0,Rural
+13,207,2,Metropolitan Statistical Area
+13,209,1,Micropolitan Statistical Area
+13,211,2,Metropolitan Statistical Area
+13,213,2,Metropolitan Statistical Area
+13,215,2,Metropolitan Statistical Area
+13,217,2,Metropolitan Statistical Area
+13,219,2,Metropolitan Statistical Area
+13,221,2,Metropolitan Statistical Area
+13,223,2,Metropolitan Statistical Area
+13,225,2,Metropolitan Statistical Area
+13,227,2,Metropolitan Statistical Area
+13,229,1,Micropolitan Statistical Area
+13,231,2,Metropolitan Statistical Area
+13,233,1,Micropolitan Statistical Area
+13,235,0,Rural
+13,237,0,Rural
+13,239,1,Micropolitan Statistical Area
+13,241,0,Rural
+13,243,0,Rural
+13,245,2,Metropolitan Statistical Area
+13,247,2,Metropolitan Statistical Area
+13,249,1,Micropolitan Statistical Area
+13,251,0,Rural
+13,253,0,Rural
+13,255,2,Metropolitan Statistical Area
+13,257,1,Micropolitan Statistical Area
+13,259,2,Metropolitan Statistical Area
+13,261,1,Micropolitan Statistical Area
+13,263,2,Metropolitan Statistical Area
+13,265,0,Rural
+13,267,0,Rural
+13,269,0,Rural
+13,271,0,Rural
+13,273,2,Metropolitan Statistical Area
+13,275,1,Micropolitan Statistical Area
+13,277,1,Micropolitan Statistical Area
+13,279,1,Micropolitan Statistical Area
+13,281,0,Rural
+13,283,0,Rural
+13,285,1,Micropolitan Statistical Area
+13,287,1,Micropolitan Statistical Area
+13,289,2,Metropolitan Statistical Area
+13,291,0,Rural
+13,293,1,Micropolitan Statistical Area
+13,295,2,Metropolitan Statistical Area
+13,297,2,Metropolitan Statistical Area
+13,299,1,Micropolitan Statistical Area
+13,301,0,Rural
+13,303,0,Rural
+13,305,1,Micropolitan Statistical Area
+13,307,0,Rural
+13,309,0,Rural
+13,311,0,Rural
+13,313,2,Metropolitan Statistical Area
+13,315,0,Rural
+13,317,0,Rural
+13,319,0,Rural
+13,321,2,Metropolitan Statistical Area
+15,000,NA,NA
+15,001,1,Micropolitan Statistical Area
+15,003,2,Metropolitan Statistical Area
+15,005,2,Metropolitan Statistical Area
+15,007,1,Micropolitan Statistical Area
+15,009,2,Metropolitan Statistical Area
+16,000,NA,NA
+16,001,2,Metropolitan Statistical Area
+16,003,0,Rural
+16,005,2,Metropolitan Statistical Area
+16,007,0,Rural
+16,009,0,Rural
+16,011,1,Micropolitan Statistical Area
+16,013,1,Micropolitan Statistical Area
+16,015,2,Metropolitan Statistical Area
+16,017,1,Micropolitan Statistical Area
+16,019,2,Metropolitan Statistical Area
+16,021,0,Rural
+16,023,2,Metropolitan Statistical Area
+16,025,1,Micropolitan Statistical Area
+16,027,2,Metropolitan Statistical Area
+16,029,0,Rural
+16,031,1,Micropolitan Statistical Area
+16,033,0,Rural
+16,035,0,Rural
+16,037,0,Rural
+16,039,1,Micropolitan Statistical Area
+16,041,2,Metropolitan Statistical Area
+16,043,1,Micropolitan Statistical Area
+16,045,2,Metropolitan Statistical Area
+16,047,0,Rural
+16,049,0,Rural
+16,051,2,Metropolitan Statistical Area
+16,053,2,Metropolitan Statistical Area
+16,055,2,Metropolitan Statistical Area
+16,057,1,Micropolitan Statistical Area
+16,059,0,Rural
+16,061,0,Rural
+16,063,1,Micropolitan Statistical Area
+16,065,1,Micropolitan Statistical Area
+16,067,1,Micropolitan Statistical Area
+16,069,2,Metropolitan Statistical Area
+16,071,1,Micropolitan Statistical Area
+16,073,2,Metropolitan Statistical Area
+16,075,1,Micropolitan Statistical Area
+16,077,0,Rural
+16,079,0,Rural
+16,081,1,Micropolitan Statistical Area
+16,083,2,Metropolitan Statistical Area
+16,085,0,Rural
+16,087,0,Rural
+17,000,NA,NA
+17,001,1,Micropolitan Statistical Area
+17,003,2,Metropolitan Statistical Area
+17,005,2,Metropolitan Statistical Area
+17,007,2,Metropolitan Statistical Area
+17,009,0,Rural
+17,011,1,Micropolitan Statistical Area
+17,013,2,Metropolitan Statistical Area
+17,015,0,Rural
+17,017,0,Rural
+17,019,2,Metropolitan Statistical Area
+17,021,1,Micropolitan Statistical Area
+17,023,0,Rural
+17,025,0,Rural
+17,027,2,Metropolitan Statistical Area
+17,029,1,Micropolitan Statistical Area
+17,031,2,Metropolitan Statistical Area
+17,033,0,Rural
+17,035,1,Micropolitan Statistical Area
+17,037,2,Metropolitan Statistical Area
+17,039,0,Rural
+17,041,0,Rural
+17,043,2,Metropolitan Statistical Area
+17,045,0,Rural
+17,047,0,Rural
+17,049,1,Micropolitan Statistical Area
+17,051,0,Rural
+17,053,2,Metropolitan Statistical Area
+17,055,0,Rural
+17,057,1,Micropolitan Statistical Area
+17,059,0,Rural
+17,061,0,Rural
+17,063,2,Metropolitan Statistical Area
+17,065,0,Rural
+17,067,0,Rural
+17,069,0,Rural
+17,071,1,Micropolitan Statistical Area
+17,073,2,Metropolitan Statistical Area
+17,075,0,Rural
+17,077,1,Micropolitan Statistical Area
+17,079,0,Rural
+17,081,1,Micropolitan Statistical Area
+17,083,2,Metropolitan Statistical Area
+17,085,0,Rural
+17,087,0,Rural
+17,089,2,Metropolitan Statistical Area
+17,091,2,Metropolitan Statistical Area
+17,093,2,Metropolitan Statistical Area
+17,095,1,Micropolitan Statistical Area
+17,097,2,Metropolitan Statistical Area
+17,099,1,Micropolitan Statistical Area
+17,101,0,Rural
+17,103,1,Micropolitan Statistical Area
+17,105,1,Micropolitan Statistical Area
+17,107,1,Micropolitan Statistical Area
+17,109,1,Micropolitan Statistical Area
+17,111,2,Metropolitan Statistical Area
+17,113,2,Metropolitan Statistical Area
+17,115,2,Metropolitan Statistical Area
+17,117,2,Metropolitan Statistical Area
+17,119,2,Metropolitan Statistical Area
+17,121,1,Micropolitan Statistical Area
+17,123,2,Metropolitan Statistical Area
+17,125,0,Rural
+17,127,2,Metropolitan Statistical Area
+17,129,2,Metropolitan Statistical Area
+17,131,2,Metropolitan Statistical Area
+17,133,2,Metropolitan Statistical Area
+17,135,0,Rural
+17,137,1,Micropolitan Statistical Area
+17,139,0,Rural
+17,141,1,Micropolitan Statistical Area
+17,143,2,Metropolitan Statistical Area
+17,145,0,Rural
+17,147,2,Metropolitan Statistical Area
+17,149,0,Rural
+17,151,0,Rural
+17,153,0,Rural
+17,155,1,Micropolitan Statistical Area
+17,157,0,Rural
+17,159,0,Rural
+17,161,2,Metropolitan Statistical Area
+17,163,2,Metropolitan Statistical Area
+17,165,0,Rural
+17,167,2,Metropolitan Statistical Area
+17,169,0,Rural
+17,171,1,Micropolitan Statistical Area
+17,173,0,Rural
+17,175,2,Metropolitan Statistical Area
+17,177,1,Micropolitan Statistical Area
+17,179,2,Metropolitan Statistical Area
+17,181,0,Rural
+17,183,1,Micropolitan Statistical Area
+17,185,0,Rural
+17,187,0,Rural
+17,189,0,Rural
+17,191,0,Rural
+17,193,0,Rural
+17,195,1,Micropolitan Statistical Area
+17,197,2,Metropolitan Statistical Area
+17,199,1,Micropolitan Statistical Area
+17,201,2,Metropolitan Statistical Area
+17,203,2,Metropolitan Statistical Area
+18,000,NA,NA
+18,001,1,Micropolitan Statistical Area
+18,003,2,Metropolitan Statistical Area
+18,005,2,Metropolitan Statistical Area
+18,007,2,Metropolitan Statistical Area
+18,009,0,Rural
+18,011,2,Metropolitan Statistical Area
+18,013,2,Metropolitan Statistical Area
+18,015,2,Metropolitan Statistical Area
+18,017,1,Micropolitan Statistical Area
+18,019,2,Metropolitan Statistical Area
+18,021,2,Metropolitan Statistical Area
+18,023,1,Micropolitan Statistical Area
+18,025,0,Rural
+18,027,1,Micropolitan Statistical Area
+18,029,2,Metropolitan Statistical Area
+18,031,1,Micropolitan Statistical Area
+18,033,1,Micropolitan Statistical Area
+18,035,2,Metropolitan Statistical Area
+18,037,1,Micropolitan Statistical Area
+18,039,2,Metropolitan Statistical Area
+18,041,1,Micropolitan Statistical Area
+18,043,2,Metropolitan Statistical Area
+18,045,0,Rural
+18,047,2,Metropolitan Statistical Area
+18,049,0,Rural
+18,051,0,Rural
+18,053,1,Micropolitan Statistical Area
+18,055,0,Rural
+18,057,2,Metropolitan Statistical Area
+18,059,2,Metropolitan Statistical Area
+18,061,2,Metropolitan Statistical Area
+18,063,2,Metropolitan Statistical Area
+18,065,1,Micropolitan Statistical Area
+18,067,2,Metropolitan Statistical Area
+18,069,1,Micropolitan Statistical Area
+18,071,1,Micropolitan Statistical Area
+18,073,2,Metropolitan Statistical Area
+18,075,0,Rural
+18,077,1,Micropolitan Statistical Area
+18,079,0,Rural
+18,081,2,Metropolitan Statistical Area
+18,083,1,Micropolitan Statistical Area
+18,085,1,Micropolitan Statistical Area
+18,087,0,Rural
+18,089,2,Metropolitan Statistical Area
+18,091,2,Metropolitan Statistical Area
+18,093,1,Micropolitan Statistical Area
+18,095,2,Metropolitan Statistical Area
+18,097,2,Metropolitan Statistical Area
+18,099,1,Micropolitan Statistical Area
+18,101,0,Rural
+18,103,1,Micropolitan Statistical Area
+18,105,2,Metropolitan Statistical Area
+18,107,1,Micropolitan Statistical Area
+18,109,2,Metropolitan Statistical Area
+18,111,2,Metropolitan Statistical Area
+18,113,1,Micropolitan Statistical Area
+18,115,2,Metropolitan Statistical Area
+18,117,0,Rural
+18,119,2,Metropolitan Statistical Area
+18,121,0,Rural
+18,123,0,Rural
+18,125,0,Rural
+18,127,2,Metropolitan Statistical Area
+18,129,2,Metropolitan Statistical Area
+18,131,0,Rural
+18,133,1,Micropolitan Statistical Area
+18,135,0,Rural
+18,137,0,Rural
+18,139,0,Rural
+18,141,2,Metropolitan Statistical Area
+18,143,0,Rural
+18,145,2,Metropolitan Statistical Area
+18,147,0,Rural
+18,149,0,Rural
+18,151,1,Micropolitan Statistical Area
+18,153,2,Metropolitan Statistical Area
+18,155,0,Rural
+18,157,2,Metropolitan Statistical Area
+18,159,2,Metropolitan Statistical Area
+18,161,0,Rural
+18,163,2,Metropolitan Statistical Area
+18,165,2,Metropolitan Statistical Area
+18,167,2,Metropolitan Statistical Area
+18,169,1,Micropolitan Statistical Area
+18,171,2,Metropolitan Statistical Area
+18,173,2,Metropolitan Statistical Area
+18,175,2,Metropolitan Statistical Area
+18,177,1,Micropolitan Statistical Area
+18,179,2,Metropolitan Statistical Area
+18,181,1,Micropolitan Statistical Area
+18,183,2,Metropolitan Statistical Area
+19,000,NA,NA
+19,001,0,Rural
+19,003,0,Rural
+19,005,0,Rural
+19,007,0,Rural
+19,009,0,Rural
+19,011,2,Metropolitan Statistical Area
+19,013,2,Metropolitan Statistical Area
+19,015,2,Metropolitan Statistical Area
+19,017,2,Metropolitan Statistical Area
+19,019,0,Rural
+19,021,1,Micropolitan Statistical Area
+19,023,0,Rural
+19,025,0,Rural
+19,027,1,Micropolitan Statistical Area
+19,029,0,Rural
+19,031,0,Rural
+19,033,1,Micropolitan Statistical Area
+19,035,0,Rural
+19,037,0,Rural
+19,039,0,Rural
+19,041,1,Micropolitan Statistical Area
+19,043,0,Rural
+19,045,1,Micropolitan Statistical Area
+19,047,0,Rural
+19,049,2,Metropolitan Statistical Area
+19,051,0,Rural
+19,053,0,Rural
+19,055,0,Rural
+19,057,1,Micropolitan Statistical Area
+19,059,1,Micropolitan Statistical Area
+19,061,2,Metropolitan Statistical Area
+19,063,0,Rural
+19,065,0,Rural
+19,067,0,Rural
+19,069,0,Rural
+19,071,0,Rural
+19,073,0,Rural
+19,075,2,Metropolitan Statistical Area
+19,077,2,Metropolitan Statistical Area
+19,079,0,Rural
+19,081,0,Rural
+19,083,0,Rural
+19,085,2,Metropolitan Statistical Area
+19,087,0,Rural
+19,089,0,Rural
+19,091,0,Rural
+19,093,0,Rural
+19,095,0,Rural
+19,097,0,Rural
+19,099,2,Metropolitan Statistical Area
+19,101,0,Rural
+19,103,2,Metropolitan Statistical Area
+19,105,2,Metropolitan Statistical Area
+19,107,0,Rural
+19,109,0,Rural
+19,111,1,Micropolitan Statistical Area
+19,113,2,Metropolitan Statistical Area
+19,115,0,Rural
+19,117,0,Rural
+19,119,0,Rural
+19,121,2,Metropolitan Statistical Area
+19,123,1,Micropolitan Statistical Area
+19,125,1,Micropolitan Statistical Area
+19,127,1,Micropolitan Statistical Area
+19,129,2,Metropolitan Statistical Area
+19,131,0,Rural
+19,133,0,Rural
+19,135,0,Rural
+19,137,0,Rural
+19,139,1,Micropolitan Statistical Area
+19,141,0,Rural
+19,143,0,Rural
+19,145,0,Rural
+19,147,0,Rural
+19,149,1,Micropolitan Statistical Area
+19,151,0,Rural
+19,153,2,Metropolitan Statistical Area
+19,155,2,Metropolitan Statistical Area
+19,157,0,Rural
+19,159,0,Rural
+19,161,0,Rural
+19,163,2,Metropolitan Statistical Area
+19,165,0,Rural
+19,167,0,Rural
+19,169,2,Metropolitan Statistical Area
+19,171,0,Rural
+19,173,0,Rural
+19,175,0,Rural
+19,177,0,Rural
+19,179,1,Micropolitan Statistical Area
+19,181,2,Metropolitan Statistical Area
+19,183,2,Metropolitan Statistical Area
+19,185,0,Rural
+19,187,1,Micropolitan Statistical Area
+19,189,0,Rural
+19,191,0,Rural
+19,193,2,Metropolitan Statistical Area
+19,195,1,Micropolitan Statistical Area
+19,197,0,Rural
+20,000,NA,NA
+20,001,0,Rural
+20,003,0,Rural
+20,005,1,Micropolitan Statistical Area
+20,007,0,Rural
+20,009,1,Micropolitan Statistical Area
+20,011,0,Rural
+20,013,0,Rural
+20,015,2,Metropolitan Statistical Area
+20,017,1,Micropolitan Statistical Area
+20,019,0,Rural
+20,021,2,Metropolitan Statistical Area
+20,023,0,Rural
+20,025,0,Rural
+20,027,0,Rural
+20,029,0,Rural
+20,031,0,Rural
+20,033,0,Rural
+20,035,1,Micropolitan Statistical Area
+20,037,1,Micropolitan Statistical Area
+20,039,0,Rural
+20,041,0,Rural
+20,043,2,Metropolitan Statistical Area
+20,045,2,Metropolitan Statistical Area
+20,047,0,Rural
+20,049,0,Rural
+20,051,1,Micropolitan Statistical Area
+20,053,0,Rural
+20,055,1,Micropolitan Statistical Area
+20,057,1,Micropolitan Statistical Area
+20,059,1,Micropolitan Statistical Area
+20,061,2,Metropolitan Statistical Area
+20,063,0,Rural
+20,065,0,Rural
+20,067,0,Rural
+20,069,0,Rural
+20,071,0,Rural
+20,073,0,Rural
+20,075,0,Rural
+20,077,0,Rural
+20,079,2,Metropolitan Statistical Area
+20,081,0,Rural
+20,083,0,Rural
+20,085,2,Metropolitan Statistical Area
+20,087,2,Metropolitan Statistical Area
+20,089,0,Rural
+20,091,2,Metropolitan Statistical Area
+20,093,0,Rural
+20,095,0,Rural
+20,097,0,Rural
+20,099,0,Rural
+20,101,0,Rural
+20,103,2,Metropolitan Statistical Area
+20,105,0,Rural
+20,107,2,Metropolitan Statistical Area
+20,109,0,Rural
+20,111,1,Micropolitan Statistical Area
+20,113,1,Micropolitan Statistical Area
+20,115,0,Rural
+20,117,0,Rural
+20,119,0,Rural
+20,121,2,Metropolitan Statistical Area
+20,123,0,Rural
+20,125,0,Rural
+20,127,0,Rural
+20,129,0,Rural
+20,131,0,Rural
+20,133,0,Rural
+20,135,0,Rural
+20,137,0,Rural
+20,139,2,Metropolitan Statistical Area
+20,141,0,Rural
+20,143,1,Micropolitan Statistical Area
+20,145,0,Rural
+20,147,0,Rural
+20,149,2,Metropolitan Statistical Area
+20,151,0,Rural
+20,153,0,Rural
+20,155,1,Micropolitan Statistical Area
+20,157,0,Rural
+20,159,0,Rural
+20,161,2,Metropolitan Statistical Area
+20,163,0,Rural
+20,165,0,Rural
+20,167,0,Rural
+20,169,1,Micropolitan Statistical Area
+20,171,0,Rural
+20,173,2,Metropolitan Statistical Area
+20,175,1,Micropolitan Statistical Area
+20,177,2,Metropolitan Statistical Area
+20,179,0,Rural
+20,181,0,Rural
+20,183,0,Rural
+20,185,0,Rural
+20,187,0,Rural
+20,189,0,Rural
+20,191,2,Metropolitan Statistical Area
+20,193,0,Rural
+20,195,0,Rural
+20,197,2,Metropolitan Statistical Area
+20,199,0,Rural
+20,201,0,Rural
+20,203,0,Rural
+20,205,0,Rural
+20,207,0,Rural
+20,209,2,Metropolitan Statistical Area
+21,000,NA,NA
+21,001,0,Rural
+21,003,2,Metropolitan Statistical Area
+21,005,1,Micropolitan Statistical Area
+21,007,2,Metropolitan Statistical Area
+21,009,1,Micropolitan Statistical Area
+21,011,1,Micropolitan Statistical Area
+21,013,1,Micropolitan Statistical Area
+21,015,2,Metropolitan Statistical Area
+21,017,2,Metropolitan Statistical Area
+21,019,2,Metropolitan Statistical Area
+21,021,1,Micropolitan Statistical Area
+21,023,2,Metropolitan Statistical Area
+21,025,0,Rural
+21,027,0,Rural
+21,029,2,Metropolitan Statistical Area
+21,031,2,Metropolitan Statistical Area
+21,033,0,Rural
+21,035,1,Micropolitan Statistical Area
+21,037,2,Metropolitan Statistical Area
+21,039,2,Metropolitan Statistical Area
+21,041,0,Rural
+21,043,2,Metropolitan Statistical Area
+21,045,0,Rural
+21,047,2,Metropolitan Statistical Area
+21,049,2,Metropolitan Statistical Area
+21,051,1,Micropolitan Statistical Area
+21,053,0,Rural
+21,055,0,Rural
+21,057,0,Rural
+21,059,2,Metropolitan Statistical Area
+21,061,2,Metropolitan Statistical Area
+21,063,0,Rural
+21,065,1,Micropolitan Statistical Area
+21,067,2,Metropolitan Statistical Area
+21,069,0,Rural
+21,071,1,Micropolitan Statistical Area
+21,073,1,Micropolitan Statistical Area
+21,075,0,Rural
+21,077,2,Metropolitan Statistical Area
+21,079,0,Rural
+21,081,2,Metropolitan Statistical Area
+21,083,1,Micropolitan Statistical Area
+21,085,0,Rural
+21,087,1,Micropolitan Statistical Area
+21,089,2,Metropolitan Statistical Area
+21,091,0,Rural
+21,093,2,Metropolitan Statistical Area
+21,095,0,Rural
+21,097,0,Rural
+21,099,0,Rural
+21,101,1,Micropolitan Statistical Area
+21,103,2,Metropolitan Statistical Area
+21,105,0,Rural
+21,107,1,Micropolitan Statistical Area
+21,109,0,Rural
+21,111,2,Metropolitan Statistical Area
+21,113,2,Metropolitan Statistical Area
+21,115,0,Rural
+21,117,2,Metropolitan Statistical Area
+21,119,0,Rural
+21,121,1,Micropolitan Statistical Area
+21,123,2,Metropolitan Statistical Area
+21,125,1,Micropolitan Statistical Area
+21,127,2,Metropolitan Statistical Area
+21,129,0,Rural
+21,131,0,Rural
+21,133,0,Rural
+21,135,0,Rural
+21,137,1,Micropolitan Statistical Area
+21,139,2,Metropolitan Statistical Area
+21,141,0,Rural
+21,143,0,Rural
+21,145,2,Metropolitan Statistical Area
+21,147,0,Rural
+21,149,2,Metropolitan Statistical Area
+21,151,1,Micropolitan Statistical Area
+21,153,0,Rural
+21,155,0,Rural
+21,157,0,Rural
+21,159,0,Rural
+21,161,0,Rural
+21,163,2,Metropolitan Statistical Area
+21,165,1,Micropolitan Statistical Area
+21,167,0,Rural
+21,169,1,Micropolitan Statistical Area
+21,171,0,Rural
+21,173,1,Micropolitan Statistical Area
+21,175,0,Rural
+21,177,0,Rural
+21,179,2,Metropolitan Statistical Area
+21,181,0,Rural
+21,183,0,Rural
+21,185,2,Metropolitan Statistical Area
+21,187,0,Rural
+21,189,0,Rural
+21,191,2,Metropolitan Statistical Area
+21,193,0,Rural
+21,195,1,Micropolitan Statistical Area
+21,197,0,Rural
+21,199,1,Micropolitan Statistical Area
+21,201,0,Rural
+21,203,1,Micropolitan Statistical Area
+21,205,0,Rural
+21,207,0,Rural
+21,209,2,Metropolitan Statistical Area
+21,211,2,Metropolitan Statistical Area
+21,213,1,Micropolitan Statistical Area
+21,215,2,Metropolitan Statistical Area
+21,217,1,Micropolitan Statistical Area
+21,219,0,Rural
+21,221,2,Metropolitan Statistical Area
+21,223,0,Rural
+21,225,0,Rural
+21,227,2,Metropolitan Statistical Area
+21,229,0,Rural
+21,231,0,Rural
+21,233,1,Micropolitan Statistical Area
+21,235,1,Micropolitan Statistical Area
+21,237,0,Rural
+21,239,2,Metropolitan Statistical Area
+22,000,NA,NA
+22,001,2,Metropolitan Statistical Area
+22,003,0,Rural
+22,005,2,Metropolitan Statistical Area
+22,007,2,Metropolitan Statistical Area
+22,009,0,Rural
+22,011,1,Micropolitan Statistical Area
+22,013,0,Rural
+22,015,2,Metropolitan Statistical Area
+22,017,2,Metropolitan Statistical Area
+22,019,2,Metropolitan Statistical Area
+22,021,0,Rural
+22,023,2,Metropolitan Statistical Area
+22,025,0,Rural
+22,027,0,Rural
+22,029,1,Micropolitan Statistical Area
+22,031,2,Metropolitan Statistical Area
+22,033,2,Metropolitan Statistical Area
+22,035,0,Rural
+22,037,2,Metropolitan Statistical Area
+22,039,0,Rural
+22,041,0,Rural
+22,043,2,Metropolitan Statistical Area
+22,045,1,Micropolitan Statistical Area
+22,047,2,Metropolitan Statistical Area
+22,049,0,Rural
+22,051,2,Metropolitan Statistical Area
+22,053,2,Metropolitan Statistical Area
+22,055,2,Metropolitan Statistical Area
+22,057,2,Metropolitan Statistical Area
+22,059,0,Rural
+22,061,1,Micropolitan Statistical Area
+22,063,2,Metropolitan Statistical Area
+22,065,0,Rural
+22,067,2,Metropolitan Statistical Area
+22,069,1,Micropolitan Statistical Area
+22,071,2,Metropolitan Statistical Area
+22,073,2,Metropolitan Statistical Area
+22,075,2,Metropolitan Statistical Area
+22,077,2,Metropolitan Statistical Area
+22,079,2,Metropolitan Statistical Area
+22,081,0,Rural
+22,083,2,Metropolitan Statistical Area
+22,085,0,Rural
+22,087,2,Metropolitan Statistical Area
+22,089,2,Metropolitan Statistical Area
+22,091,2,Metropolitan Statistical Area
+22,093,2,Metropolitan Statistical Area
+22,095,2,Metropolitan Statistical Area
+22,097,1,Micropolitan Statistical Area
+22,099,2,Metropolitan Statistical Area
+22,101,1,Micropolitan Statistical Area
+22,103,2,Metropolitan Statistical Area
+22,105,2,Metropolitan Statistical Area
+22,107,0,Rural
+22,109,2,Metropolitan Statistical Area
+22,111,2,Metropolitan Statistical Area
+22,113,2,Metropolitan Statistical Area
+22,115,0,Rural
+22,117,1,Micropolitan Statistical Area
+22,119,1,Micropolitan Statistical Area
+22,121,2,Metropolitan Statistical Area
+22,123,0,Rural
+22,125,2,Metropolitan Statistical Area
+22,127,0,Rural
+23,000,NA,NA
+23,001,2,Metropolitan Statistical Area
+23,003,0,Rural
+23,005,2,Metropolitan Statistical Area
+23,007,0,Rural
+23,009,0,Rural
+23,011,1,Micropolitan Statistical Area
+23,013,0,Rural
+23,015,0,Rural
+23,017,0,Rural
+23,019,2,Metropolitan Statistical Area
+23,021,0,Rural
+23,023,2,Metropolitan Statistical Area
+23,025,0,Rural
+23,027,0,Rural
+23,029,0,Rural
+23,031,2,Metropolitan Statistical Area
+24,000,NA,NA
+24,001,1,Micropolitan Statistical Area
+24,003,2,Metropolitan Statistical Area
+24,005,2,Metropolitan Statistical Area
+24,009,2,Metropolitan Statistical Area
+24,011,0,Rural
+24,013,2,Metropolitan Statistical Area
+24,015,2,Metropolitan Statistical Area
+24,017,2,Metropolitan Statistical Area
+24,019,1,Micropolitan Statistical Area
+24,021,2,Metropolitan Statistical Area
+24,023,0,Rural
+24,025,2,Metropolitan Statistical Area
+24,027,2,Metropolitan Statistical Area
+24,029,0,Rural
+24,031,2,Metropolitan Statistical Area
+24,033,2,Metropolitan Statistical Area
+24,035,2,Metropolitan Statistical Area
+24,037,2,Metropolitan Statistical Area
+24,039,2,Metropolitan Statistical Area
+24,041,1,Micropolitan Statistical Area
+24,043,2,Metropolitan Statistical Area
+24,045,2,Metropolitan Statistical Area
+24,047,1,Micropolitan Statistical Area
+24,510,2,Metropolitan Statistical Area
+25,000,NA,NA
+25,001,2,Metropolitan Statistical Area
+25,003,2,Metropolitan Statistical Area
+25,005,2,Metropolitan Statistical Area
+25,007,1,Micropolitan Statistical Area
+25,009,2,Metropolitan Statistical Area
+25,011,1,Micropolitan Statistical Area
+25,013,2,Metropolitan Statistical Area
+25,015,2,Metropolitan Statistical Area
+25,017,2,Metropolitan Statistical Area
+25,019,1,Micropolitan Statistical Area
+25,021,2,Metropolitan Statistical Area
+25,023,2,Metropolitan Statistical Area
+25,025,2,Metropolitan Statistical Area
+25,027,2,Metropolitan Statistical Area
+26,000,NA,NA
+26,001,0,Rural
+26,003,0,Rural
+26,005,1,Micropolitan Statistical Area
+26,007,1,Micropolitan Statistical Area
+26,009,0,Rural
+26,011,0,Rural
+26,013,0,Rural
+26,015,2,Metropolitan Statistical Area
+26,017,2,Metropolitan Statistical Area
+26,019,2,Metropolitan Statistical Area
+26,021,2,Metropolitan Statistical Area
+26,023,1,Micropolitan Statistical Area
+26,025,2,Metropolitan Statistical Area
+26,027,2,Metropolitan Statistical Area
+26,029,0,Rural
+26,031,0,Rural
+26,033,1,Micropolitan Statistical Area
+26,035,0,Rural
+26,037,2,Metropolitan Statistical Area
+26,039,0,Rural
+26,041,1,Micropolitan Statistical Area
+26,043,1,Micropolitan Statistical Area
+26,045,2,Metropolitan Statistical Area
+26,047,1,Micropolitan Statistical Area
+26,049,2,Metropolitan Statistical Area
+26,051,0,Rural
+26,053,0,Rural
+26,055,2,Metropolitan Statistical Area
+26,057,1,Micropolitan Statistical Area
+26,059,1,Micropolitan Statistical Area
+26,061,1,Micropolitan Statistical Area
+26,063,0,Rural
+26,065,2,Metropolitan Statistical Area
+26,067,2,Metropolitan Statistical Area
+26,069,0,Rural
+26,071,0,Rural
+26,073,1,Micropolitan Statistical Area
+26,075,2,Metropolitan Statistical Area
+26,077,2,Metropolitan Statistical Area
+26,079,2,Metropolitan Statistical Area
+26,081,2,Metropolitan Statistical Area
+26,083,1,Micropolitan Statistical Area
+26,085,0,Rural
+26,087,2,Metropolitan Statistical Area
+26,089,2,Metropolitan Statistical Area
+26,091,1,Micropolitan Statistical Area
+26,093,2,Metropolitan Statistical Area
+26,095,0,Rural
+26,097,0,Rural
+26,099,2,Metropolitan Statistical Area
+26,101,0,Rural
+26,103,1,Micropolitan Statistical Area
+26,105,1,Micropolitan Statistical Area
+26,107,1,Micropolitan Statistical Area
+26,109,1,Micropolitan Statistical Area
+26,111,2,Metropolitan Statistical Area
+26,113,1,Micropolitan Statistical Area
+26,115,2,Metropolitan Statistical Area
+26,117,2,Metropolitan Statistical Area
+26,119,0,Rural
+26,121,2,Metropolitan Statistical Area
+26,123,0,Rural
+26,125,2,Metropolitan Statistical Area
+26,127,0,Rural
+26,129,0,Rural
+26,131,0,Rural
+26,133,0,Rural
+26,135,0,Rural
+26,137,0,Rural
+26,139,2,Metropolitan Statistical Area
+26,141,0,Rural
+26,143,0,Rural
+26,145,2,Metropolitan Statistical Area
+26,147,2,Metropolitan Statistical Area
+26,149,1,Micropolitan Statistical Area
+26,151,0,Rural
+26,153,0,Rural
+26,155,1,Micropolitan Statistical Area
+26,157,0,Rural
+26,159,0,Rural
+26,161,2,Metropolitan Statistical Area
+26,163,2,Metropolitan Statistical Area
+26,165,1,Micropolitan Statistical Area
+27,000,NA,NA
+27,001,0,Rural
+27,003,2,Metropolitan Statistical Area
+27,005,1,Micropolitan Statistical Area
+27,007,1,Micropolitan Statistical Area
+27,009,2,Metropolitan Statistical Area
+27,011,0,Rural
+27,013,2,Metropolitan Statistical Area
+27,015,1,Micropolitan Statistical Area
+27,017,2,Metropolitan Statistical Area
+27,019,2,Metropolitan Statistical Area
+27,021,1,Micropolitan Statistical Area
+27,023,0,Rural
+27,025,2,Metropolitan Statistical Area
+27,027,2,Metropolitan Statistical Area
+27,029,0,Rural
+27,031,0,Rural
+27,033,0,Rural
+27,035,1,Micropolitan Statistical Area
+27,037,2,Metropolitan Statistical Area
+27,039,2,Metropolitan Statistical Area
+27,041,1,Micropolitan Statistical Area
+27,043,0,Rural
+27,045,2,Metropolitan Statistical Area
+27,047,1,Micropolitan Statistical Area
+27,049,1,Micropolitan Statistical Area
+27,051,0,Rural
+27,053,2,Metropolitan Statistical Area
+27,055,2,Metropolitan Statistical Area
+27,057,0,Rural
+27,059,2,Metropolitan Statistical Area
+27,061,1,Micropolitan Statistical Area
+27,063,0,Rural
+27,065,0,Rural
+27,067,1,Micropolitan Statistical Area
+27,069,0,Rural
+27,071,0,Rural
+27,073,0,Rural
+27,075,0,Rural
+27,077,0,Rural
+27,079,2,Metropolitan Statistical Area
+27,081,0,Rural
+27,083,1,Micropolitan Statistical Area
+27,085,1,Micropolitan Statistical Area
+27,087,0,Rural
+27,089,0,Rural
+27,091,1,Micropolitan Statistical Area
+27,093,0,Rural
+27,095,2,Metropolitan Statistical Area
+27,097,0,Rural
+27,099,1,Micropolitan Statistical Area
+27,101,0,Rural
+27,103,2,Metropolitan Statistical Area
+27,105,1,Micropolitan Statistical Area
+27,107,0,Rural
+27,109,2,Metropolitan Statistical Area
+27,111,1,Micropolitan Statistical Area
+27,113,0,Rural
+27,115,0,Rural
+27,117,0,Rural
+27,119,2,Metropolitan Statistical Area
+27,121,0,Rural
+27,123,2,Metropolitan Statistical Area
+27,125,0,Rural
+27,127,0,Rural
+27,129,0,Rural
+27,131,1,Micropolitan Statistical Area
+27,133,2,Metropolitan Statistical Area
+27,135,0,Rural
+27,137,2,Metropolitan Statistical Area
+27,139,2,Metropolitan Statistical Area
+27,141,2,Metropolitan Statistical Area
+27,143,0,Rural
+27,145,2,Metropolitan Statistical Area
+27,147,1,Micropolitan Statistical Area
+27,149,0,Rural
+27,151,0,Rural
+27,153,0,Rural
+27,155,0,Rural
+27,157,2,Metropolitan Statistical Area
+27,159,0,Rural
+27,161,0,Rural
+27,163,2,Metropolitan Statistical Area
+27,165,0,Rural
+27,167,1,Micropolitan Statistical Area
+27,169,1,Micropolitan Statistical Area
+27,171,2,Metropolitan Statistical Area
+27,173,0,Rural
+28,000,NA,NA
+28,001,1,Micropolitan Statistical Area
+28,003,1,Micropolitan Statistical Area
+28,005,0,Rural
+28,007,0,Rural
+28,009,2,Metropolitan Statistical Area
+28,011,1,Micropolitan Statistical Area
+28,013,0,Rural
+28,015,1,Micropolitan Statistical Area
+28,017,0,Rural
+28,019,0,Rural
+28,021,0,Rural
+28,023,1,Micropolitan Statistical Area
+28,025,0,Rural
+28,027,1,Micropolitan Statistical Area
+28,029,2,Metropolitan Statistical Area
+28,031,0,Rural
+28,033,2,Metropolitan Statistical Area
+28,035,2,Metropolitan Statistical Area
+28,037,0,Rural
+28,039,0,Rural
+28,041,0,Rural
+28,043,1,Micropolitan Statistical Area
+28,045,2,Metropolitan Statistical Area
+28,047,2,Metropolitan Statistical Area
+28,049,2,Metropolitan Statistical Area
+28,051,2,Metropolitan Statistical Area
+28,053,0,Rural
+28,055,0,Rural
+28,057,1,Micropolitan Statistical Area
+28,059,2,Metropolitan Statistical Area
+28,061,1,Micropolitan Statistical Area
+28,063,1,Micropolitan Statistical Area
+28,065,0,Rural
+28,067,1,Micropolitan Statistical Area
+28,069,0,Rural
+28,071,1,Micropolitan Statistical Area
+28,073,2,Metropolitan Statistical Area
+28,075,1,Micropolitan Statistical Area
+28,077,0,Rural
+28,079,0,Rural
+28,081,1,Micropolitan Statistical Area
+28,083,1,Micropolitan Statistical Area
+28,085,1,Micropolitan Statistical Area
+28,087,1,Micropolitan Statistical Area
+28,089,2,Metropolitan Statistical Area
+28,091,0,Rural
+28,093,2,Metropolitan Statistical Area
+28,095,0,Rural
+28,097,1,Micropolitan Statistical Area
+28,099,0,Rural
+28,101,0,Rural
+28,103,1,Micropolitan Statistical Area
+28,105,1,Micropolitan Statistical Area
+28,107,0,Rural
+28,109,1,Micropolitan Statistical Area
+28,111,2,Metropolitan Statistical Area
+28,113,1,Micropolitan Statistical Area
+28,115,0,Rural
+28,117,1,Micropolitan Statistical Area
+28,119,0,Rural
+28,121,2,Metropolitan Statistical Area
+28,123,2,Metropolitan Statistical Area
+28,125,0,Rural
+28,127,2,Metropolitan Statistical Area
+28,129,0,Rural
+28,131,2,Metropolitan Statistical Area
+28,133,0,Rural
+28,135,0,Rural
+28,137,2,Metropolitan Statistical Area
+28,139,0,Rural
+28,141,0,Rural
+28,143,2,Metropolitan Statistical Area
+28,145,0,Rural
+28,147,1,Micropolitan Statistical Area
+28,149,1,Micropolitan Statistical Area
+28,151,1,Micropolitan Statistical Area
+28,153,0,Rural
+28,155,1,Micropolitan Statistical Area
+28,157,0,Rural
+28,159,0,Rural
+28,161,1,Micropolitan Statistical Area
+28,163,2,Metropolitan Statistical Area
+29,000,NA,NA
+29,001,1,Micropolitan Statistical Area
+29,003,2,Metropolitan Statistical Area
+29,005,0,Rural
+29,007,1,Micropolitan Statistical Area
+29,009,0,Rural
+29,011,0,Rural
+29,013,2,Metropolitan Statistical Area
+29,015,0,Rural
+29,017,2,Metropolitan Statistical Area
+29,019,2,Metropolitan Statistical Area
+29,021,2,Metropolitan Statistical Area
+29,023,1,Micropolitan Statistical Area
+29,025,2,Metropolitan Statistical Area
+29,027,2,Metropolitan Statistical Area
+29,029,0,Rural
+29,031,2,Metropolitan Statistical Area
+29,033,0,Rural
+29,035,0,Rural
+29,037,2,Metropolitan Statistical Area
+29,039,0,Rural
+29,041,0,Rural
+29,043,2,Metropolitan Statistical Area
+29,045,0,Rural
+29,047,2,Metropolitan Statistical Area
+29,049,2,Metropolitan Statistical Area
+29,051,2,Metropolitan Statistical Area
+29,053,2,Metropolitan Statistical Area
+29,055,0,Rural
+29,057,0,Rural
+29,059,2,Metropolitan Statistical Area
+29,061,0,Rural
+29,063,2,Metropolitan Statistical Area
+29,065,0,Rural
+29,067,0,Rural
+29,069,1,Micropolitan Statistical Area
+29,071,2,Metropolitan Statistical Area
+29,073,0,Rural
+29,075,0,Rural
+29,077,2,Metropolitan Statistical Area
+29,079,0,Rural
+29,081,0,Rural
+29,083,0,Rural
+29,085,0,Rural
+29,087,0,Rural
+29,089,2,Metropolitan Statistical Area
+29,091,1,Micropolitan Statistical Area
+29,093,0,Rural
+29,095,2,Metropolitan Statistical Area
+29,097,2,Metropolitan Statistical Area
+29,099,2,Metropolitan Statistical Area
+29,101,1,Micropolitan Statistical Area
+29,103,0,Rural
+29,105,1,Micropolitan Statistical Area
+29,107,2,Metropolitan Statistical Area
+29,109,0,Rural
+29,111,1,Micropolitan Statistical Area
+29,113,2,Metropolitan Statistical Area
+29,115,0,Rural
+29,117,0,Rural
+29,119,0,Rural
+29,121,0,Rural
+29,123,0,Rural
+29,125,0,Rural
+29,127,1,Micropolitan Statistical Area
+29,129,0,Rural
+29,131,0,Rural
+29,133,1,Micropolitan Statistical Area
+29,135,2,Metropolitan Statistical Area
+29,137,0,Rural
+29,139,0,Rural
+29,141,0,Rural
+29,143,0,Rural
+29,145,2,Metropolitan Statistical Area
+29,147,1,Micropolitan Statistical Area
+29,149,0,Rural
+29,151,2,Metropolitan Statistical Area
+29,153,0,Rural
+29,155,0,Rural
+29,157,0,Rural
+29,159,1,Micropolitan Statistical Area
+29,161,1,Micropolitan Statistical Area
+29,163,0,Rural
+29,165,2,Metropolitan Statistical Area
+29,167,2,Metropolitan Statistical Area
+29,169,1,Micropolitan Statistical Area
+29,171,0,Rural
+29,173,1,Micropolitan Statistical Area
+29,175,1,Micropolitan Statistical Area
+29,177,2,Metropolitan Statistical Area
+29,179,0,Rural
+29,181,0,Rural
+29,183,2,Metropolitan Statistical Area
+29,185,0,Rural
+29,186,0,Rural
+29,187,1,Micropolitan Statistical Area
+29,189,2,Metropolitan Statistical Area
+29,195,1,Micropolitan Statistical Area
+29,197,1,Micropolitan Statistical Area
+29,199,0,Rural
+29,201,1,Micropolitan Statistical Area
+29,203,0,Rural
+29,205,0,Rural
+29,207,0,Rural
+29,209,0,Rural
+29,211,0,Rural
+29,213,1,Micropolitan Statistical Area
+29,215,0,Rural
+29,217,0,Rural
+29,219,2,Metropolitan Statistical Area
+29,221,0,Rural
+29,223,0,Rural
+29,225,2,Metropolitan Statistical Area
+29,227,0,Rural
+29,229,0,Rural
+29,510,2,Metropolitan Statistical Area
+30,000,NA,NA
+30,001,0,Rural
+30,003,0,Rural
+30,005,0,Rural
+30,007,2,Metropolitan Statistical Area
+30,009,2,Metropolitan Statistical Area
+30,011,0,Rural
+30,013,2,Metropolitan Statistical Area
+30,015,0,Rural
+30,017,0,Rural
+30,019,0,Rural
+30,021,0,Rural
+30,023,0,Rural
+30,025,0,Rural
+30,027,0,Rural
+30,029,1,Micropolitan Statistical Area
+30,031,2,Metropolitan Statistical Area
+30,033,0,Rural
+30,035,0,Rural
+30,037,0,Rural
+30,039,0,Rural
+30,041,0,Rural
+30,043,2,Metropolitan Statistical Area
+30,045,0,Rural
+30,047,0,Rural
+30,049,2,Metropolitan Statistical Area
+30,051,0,Rural
+30,053,0,Rural
+30,055,0,Rural
+30,057,0,Rural
+30,059,0,Rural
+30,061,2,Metropolitan Statistical Area
+30,063,2,Metropolitan Statistical Area
+30,065,0,Rural
+30,067,0,Rural
+30,069,0,Rural
+30,071,0,Rural
+30,073,0,Rural
+30,075,0,Rural
+30,077,0,Rural
+30,079,0,Rural
+30,081,0,Rural
+30,083,0,Rural
+30,085,0,Rural
+30,087,0,Rural
+30,089,0,Rural
+30,091,0,Rural
+30,093,1,Micropolitan Statistical Area
+30,095,2,Metropolitan Statistical Area
+30,097,0,Rural
+30,099,0,Rural
+30,101,0,Rural
+30,103,0,Rural
+30,105,0,Rural
+30,107,0,Rural
+30,109,0,Rural
+30,111,2,Metropolitan Statistical Area
+31,000,NA,NA
+31,001,1,Micropolitan Statistical Area
+31,003,0,Rural
+31,005,0,Rural
+31,007,1,Micropolitan Statistical Area
+31,009,0,Rural
+31,011,0,Rural
+31,013,0,Rural
+31,015,0,Rural
+31,017,0,Rural
+31,019,1,Micropolitan Statistical Area
+31,021,0,Rural
+31,023,0,Rural
+31,025,2,Metropolitan Statistical Area
+31,027,0,Rural
+31,029,0,Rural
+31,031,0,Rural
+31,033,0,Rural
+31,035,1,Micropolitan Statistical Area
+31,037,1,Micropolitan Statistical Area
+31,039,0,Rural
+31,041,0,Rural
+31,043,2,Metropolitan Statistical Area
+31,045,0,Rural
+31,047,1,Micropolitan Statistical Area
+31,049,0,Rural
+31,051,0,Rural
+31,053,1,Micropolitan Statistical Area
+31,055,2,Metropolitan Statistical Area
+31,057,0,Rural
+31,059,0,Rural
+31,061,0,Rural
+31,063,0,Rural
+31,065,0,Rural
+31,067,1,Micropolitan Statistical Area
+31,069,0,Rural
+31,071,0,Rural
+31,073,1,Micropolitan Statistical Area
+31,075,0,Rural
+31,077,0,Rural
+31,079,2,Metropolitan Statistical Area
+31,081,0,Rural
+31,083,0,Rural
+31,085,0,Rural
+31,087,0,Rural
+31,089,0,Rural
+31,091,0,Rural
+31,093,2,Metropolitan Statistical Area
+31,095,0,Rural
+31,097,0,Rural
+31,099,1,Micropolitan Statistical Area
+31,101,0,Rural
+31,103,0,Rural
+31,105,0,Rural
+31,107,0,Rural
+31,109,2,Metropolitan Statistical Area
+31,111,1,Micropolitan Statistical Area
+31,113,1,Micropolitan Statistical Area
+31,115,0,Rural
+31,117,0,Rural
+31,119,1,Micropolitan Statistical Area
+31,121,2,Metropolitan Statistical Area
+31,123,0,Rural
+31,125,0,Rural
+31,127,0,Rural
+31,129,0,Rural
+31,131,0,Rural
+31,133,0,Rural
+31,135,0,Rural
+31,137,0,Rural
+31,139,1,Micropolitan Statistical Area
+31,141,1,Micropolitan Statistical Area
+31,143,0,Rural
+31,145,0,Rural
+31,147,0,Rural
+31,149,0,Rural
+31,151,0,Rural
+31,153,2,Metropolitan Statistical Area
+31,155,2,Metropolitan Statistical Area
+31,157,1,Micropolitan Statistical Area
+31,159,2,Metropolitan Statistical Area
+31,161,0,Rural
+31,163,0,Rural
+31,165,0,Rural
+31,167,1,Micropolitan Statistical Area
+31,169,0,Rural
+31,171,0,Rural
+31,173,0,Rural
+31,175,0,Rural
+31,177,2,Metropolitan Statistical Area
+31,179,0,Rural
+31,181,1,Micropolitan Statistical Area
+31,183,0,Rural
+31,185,0,Rural
+32,000,NA,NA
+32,001,1,Micropolitan Statistical Area
+32,003,2,Metropolitan Statistical Area
+32,005,1,Micropolitan Statistical Area
+32,007,1,Micropolitan Statistical Area
+32,009,0,Rural
+32,011,1,Micropolitan Statistical Area
+32,013,1,Micropolitan Statistical Area
+32,015,0,Rural
+32,017,0,Rural
+32,019,2,Metropolitan Statistical Area
+32,021,0,Rural
+32,023,1,Micropolitan Statistical Area
+32,027,0,Rural
+32,029,2,Metropolitan Statistical Area
+32,031,2,Metropolitan Statistical Area
+32,033,0,Rural
+32,510,2,Metropolitan Statistical Area
+33,000,NA,NA
+33,001,1,Micropolitan Statistical Area
+33,003,0,Rural
+33,005,1,Micropolitan Statistical Area
+33,007,0,Rural
+33,009,1,Micropolitan Statistical Area
+33,011,2,Metropolitan Statistical Area
+33,013,1,Micropolitan Statistical Area
+33,015,2,Metropolitan Statistical Area
+33,017,2,Metropolitan Statistical Area
+33,019,1,Micropolitan Statistical Area
+34,000,NA,NA
+34,001,2,Metropolitan Statistical Area
+34,003,2,Metropolitan Statistical Area
+34,005,2,Metropolitan Statistical Area
+34,007,2,Metropolitan Statistical Area
+34,009,2,Metropolitan Statistical Area
+34,011,2,Metropolitan Statistical Area
+34,013,2,Metropolitan Statistical Area
+34,015,2,Metropolitan Statistical Area
+34,017,2,Metropolitan Statistical Area
+34,019,2,Metropolitan Statistical Area
+34,021,2,Metropolitan Statistical Area
+34,023,2,Metropolitan Statistical Area
+34,025,2,Metropolitan Statistical Area
+34,027,2,Metropolitan Statistical Area
+34,029,2,Metropolitan Statistical Area
+34,031,2,Metropolitan Statistical Area
+34,033,2,Metropolitan Statistical Area
+34,035,2,Metropolitan Statistical Area
+34,037,2,Metropolitan Statistical Area
+34,039,2,Metropolitan Statistical Area
+34,041,2,Metropolitan Statistical Area
+35,000,NA,NA
+35,001,2,Metropolitan Statistical Area
+35,003,0,Rural
+35,005,1,Micropolitan Statistical Area
+35,006,0,Rural
+35,007,0,Rural
+35,009,1,Micropolitan Statistical Area
+35,011,0,Rural
+35,013,2,Metropolitan Statistical Area
+35,015,1,Micropolitan Statistical Area
+35,017,1,Micropolitan Statistical Area
+35,019,0,Rural
+35,021,0,Rural
+35,023,0,Rural
+35,025,1,Micropolitan Statistical Area
+35,027,1,Micropolitan Statistical Area
+35,028,1,Micropolitan Statistical Area
+35,029,1,Micropolitan Statistical Area
+35,031,1,Micropolitan Statistical Area
+35,033,1,Micropolitan Statistical Area
+35,035,1,Micropolitan Statistical Area
+35,037,0,Rural
+35,039,1,Micropolitan Statistical Area
+35,041,1,Micropolitan Statistical Area
+35,043,2,Metropolitan Statistical Area
+35,045,2,Metropolitan Statistical Area
+35,047,1,Micropolitan Statistical Area
+35,049,2,Metropolitan Statistical Area
+35,051,0,Rural
+35,053,0,Rural
+35,055,1,Micropolitan Statistical Area
+35,057,2,Metropolitan Statistical Area
+35,059,0,Rural
+35,061,2,Metropolitan Statistical Area
+36,000,NA,NA
+36,001,2,Metropolitan Statistical Area
+36,003,0,Rural
+36,005,2,Metropolitan Statistical Area
+36,007,2,Metropolitan Statistical Area
+36,009,1,Micropolitan Statistical Area
+36,011,1,Micropolitan Statistical Area
+36,013,1,Micropolitan Statistical Area
+36,015,2,Metropolitan Statistical Area
+36,017,0,Rural
+36,019,1,Micropolitan Statistical Area
+36,021,1,Micropolitan Statistical Area
+36,023,1,Micropolitan Statistical Area
+36,025,0,Rural
+36,027,2,Metropolitan Statistical Area
+36,029,2,Metropolitan Statistical Area
+36,031,0,Rural
+36,033,0,Rural
+36,035,1,Micropolitan Statistical Area
+36,037,1,Micropolitan Statistical Area
+36,039,0,Rural
+36,041,0,Rural
+36,043,2,Metropolitan Statistical Area
+36,045,2,Metropolitan Statistical Area
+36,047,2,Metropolitan Statistical Area
+36,049,0,Rural
+36,051,2,Metropolitan Statistical Area
+36,053,2,Metropolitan Statistical Area
+36,055,2,Metropolitan Statistical Area
+36,057,1,Micropolitan Statistical Area
+36,059,2,Metropolitan Statistical Area
+36,061,2,Metropolitan Statistical Area
+36,063,2,Metropolitan Statistical Area
+36,065,2,Metropolitan Statistical Area
+36,067,2,Metropolitan Statistical Area
+36,069,2,Metropolitan Statistical Area
+36,071,2,Metropolitan Statistical Area
+36,073,2,Metropolitan Statistical Area
+36,075,2,Metropolitan Statistical Area
+36,077,1,Micropolitan Statistical Area
+36,079,2,Metropolitan Statistical Area
+36,081,2,Metropolitan Statistical Area
+36,083,2,Metropolitan Statistical Area
+36,085,2,Metropolitan Statistical Area
+36,087,2,Metropolitan Statistical Area
+36,089,1,Micropolitan Statistical Area
+36,091,2,Metropolitan Statistical Area
+36,093,2,Metropolitan Statistical Area
+36,095,2,Metropolitan Statistical Area
+36,097,0,Rural
+36,099,1,Micropolitan Statistical Area
+36,101,1,Micropolitan Statistical Area
+36,103,2,Metropolitan Statistical Area
+36,105,1,Micropolitan Statistical Area
+36,107,2,Metropolitan Statistical Area
+36,109,2,Metropolitan Statistical Area
+36,111,2,Metropolitan Statistical Area
+36,113,2,Metropolitan Statistical Area
+36,115,2,Metropolitan Statistical Area
+36,117,2,Metropolitan Statistical Area
+36,119,2,Metropolitan Statistical Area
+36,121,0,Rural
+36,123,0,Rural
+37,000,NA,NA
+37,001,2,Metropolitan Statistical Area
+37,003,2,Metropolitan Statistical Area
+37,005,0,Rural
+37,007,2,Metropolitan Statistical Area
+37,009,0,Rural
+37,011,0,Rural
+37,013,1,Micropolitan Statistical Area
+37,015,0,Rural
+37,017,0,Rural
+37,019,2,Metropolitan Statistical Area
+37,021,2,Metropolitan Statistical Area
+37,023,2,Metropolitan Statistical Area
+37,025,2,Metropolitan Statistical Area
+37,027,2,Metropolitan Statistical Area
+37,029,2,Metropolitan Statistical Area
+37,031,1,Micropolitan Statistical Area
+37,033,0,Rural
+37,035,2,Metropolitan Statistical Area
+37,037,2,Metropolitan Statistical Area
+37,039,0,Rural
+37,041,0,Rural
+37,043,0,Rural
+37,045,1,Micropolitan Statistical Area
+37,047,0,Rural
+37,049,1,Micropolitan Statistical Area
+37,051,2,Metropolitan Statistical Area
+37,053,2,Metropolitan Statistical Area
+37,055,1,Micropolitan Statistical Area
+37,057,2,Metropolitan Statistical Area
+37,059,2,Metropolitan Statistical Area
+37,061,0,Rural
+37,063,2,Metropolitan Statistical Area
+37,065,2,Metropolitan Statistical Area
+37,067,2,Metropolitan Statistical Area
+37,069,2,Metropolitan Statistical Area
+37,071,2,Metropolitan Statistical Area
+37,073,2,Metropolitan Statistical Area
+37,075,0,Rural
+37,077,0,Rural
+37,079,0,Rural
+37,081,2,Metropolitan Statistical Area
+37,083,1,Micropolitan Statistical Area
+37,085,1,Micropolitan Statistical Area
+37,087,1,Micropolitan Statistical Area
+37,089,2,Metropolitan Statistical Area
+37,091,0,Rural
+37,093,2,Metropolitan Statistical Area
+37,095,0,Rural
+37,097,2,Metropolitan Statistical Area
+37,099,0,Rural
+37,101,2,Metropolitan Statistical Area
+37,103,1,Micropolitan Statistical Area
+37,105,1,Micropolitan Statistical Area
+37,107,1,Micropolitan Statistical Area
+37,109,2,Metropolitan Statistical Area
+37,111,1,Micropolitan Statistical Area
+37,113,0,Rural
+37,115,2,Metropolitan Statistical Area
+37,117,0,Rural
+37,119,2,Metropolitan Statistical Area
+37,121,0,Rural
+37,123,0,Rural
+37,125,2,Metropolitan Statistical Area
+37,127,2,Metropolitan Statistical Area
+37,129,2,Metropolitan Statistical Area
+37,131,1,Micropolitan Statistical Area
+37,133,2,Metropolitan Statistical Area
+37,135,2,Metropolitan Statistical Area
+37,137,1,Micropolitan Statistical Area
+37,139,1,Micropolitan Statistical Area
+37,141,2,Metropolitan Statistical Area
+37,143,0,Rural
+37,145,2,Metropolitan Statistical Area
+37,147,2,Metropolitan Statistical Area
+37,149,0,Rural
+37,151,2,Metropolitan Statistical Area
+37,153,1,Micropolitan Statistical Area
+37,155,1,Micropolitan Statistical Area
+37,157,2,Metropolitan Statistical Area
+37,159,2,Metropolitan Statistical Area
+37,161,1,Micropolitan Statistical Area
+37,163,0,Rural
+37,165,1,Micropolitan Statistical Area
+37,167,1,Micropolitan Statistical Area
+37,169,2,Metropolitan Statistical Area
+37,171,1,Micropolitan Statistical Area
+37,173,0,Rural
+37,175,1,Micropolitan Statistical Area
+37,177,0,Rural
+37,179,2,Metropolitan Statistical Area
+37,181,1,Micropolitan Statistical Area
+37,183,2,Metropolitan Statistical Area
+37,185,0,Rural
+37,187,0,Rural
+37,189,1,Micropolitan Statistical Area
+37,191,2,Metropolitan Statistical Area
+37,193,1,Micropolitan Statistical Area
+37,195,1,Micropolitan Statistical Area
+37,197,2,Metropolitan Statistical Area
+37,199,0,Rural
+38,000,NA,NA
+38,001,0,Rural
+38,003,0,Rural
+38,005,0,Rural
+38,007,1,Micropolitan Statistical Area
+38,009,0,Rural
+38,011,0,Rural
+38,013,0,Rural
+38,015,2,Metropolitan Statistical Area
+38,017,2,Metropolitan Statistical Area
+38,019,0,Rural
+38,021,0,Rural
+38,023,0,Rural
+38,025,1,Micropolitan Statistical Area
+38,027,0,Rural
+38,029,0,Rural
+38,031,0,Rural
+38,033,0,Rural
+38,035,2,Metropolitan Statistical Area
+38,037,0,Rural
+38,039,0,Rural
+38,041,0,Rural
+38,043,0,Rural
+38,045,0,Rural
+38,047,0,Rural
+38,049,2,Metropolitan Statistical Area
+38,051,0,Rural
+38,053,0,Rural
+38,055,0,Rural
+38,057,0,Rural
+38,059,2,Metropolitan Statistical Area
+38,061,0,Rural
+38,063,0,Rural
+38,065,2,Metropolitan Statistical Area
+38,067,0,Rural
+38,069,0,Rural
+38,071,0,Rural
+38,073,0,Rural
+38,075,2,Metropolitan Statistical Area
+38,077,1,Micropolitan Statistical Area
+38,079,0,Rural
+38,081,0,Rural
+38,083,0,Rural
+38,085,0,Rural
+38,087,0,Rural
+38,089,1,Micropolitan Statistical Area
+38,091,0,Rural
+38,093,1,Micropolitan Statistical Area
+38,095,0,Rural
+38,097,0,Rural
+38,099,0,Rural
+38,101,2,Metropolitan Statistical Area
+38,103,0,Rural
+38,105,1,Micropolitan Statistical Area
+39,000,NA,NA
+39,001,0,Rural
+39,003,2,Metropolitan Statistical Area
+39,005,1,Micropolitan Statistical Area
+39,007,2,Metropolitan Statistical Area
+39,009,1,Micropolitan Statistical Area
+39,011,1,Micropolitan Statistical Area
+39,013,2,Metropolitan Statistical Area
+39,015,2,Metropolitan Statistical Area
+39,017,2,Metropolitan Statistical Area
+39,019,2,Metropolitan Statistical Area
+39,021,1,Micropolitan Statistical Area
+39,023,2,Metropolitan Statistical Area
+39,025,2,Metropolitan Statistical Area
+39,027,1,Micropolitan Statistical Area
+39,029,1,Micropolitan Statistical Area
+39,031,1,Micropolitan Statistical Area
+39,033,1,Micropolitan Statistical Area
+39,035,2,Metropolitan Statistical Area
+39,037,1,Micropolitan Statistical Area
+39,039,1,Micropolitan Statistical Area
+39,041,2,Metropolitan Statistical Area
+39,043,2,Metropolitan Statistical Area
+39,045,2,Metropolitan Statistical Area
+39,047,1,Micropolitan Statistical Area
+39,049,2,Metropolitan Statistical Area
+39,051,2,Metropolitan Statistical Area
+39,053,1,Micropolitan Statistical Area
+39,055,2,Metropolitan Statistical Area
+39,057,2,Metropolitan Statistical Area
+39,059,1,Micropolitan Statistical Area
+39,061,2,Metropolitan Statistical Area
+39,063,1,Micropolitan Statistical Area
+39,065,0,Rural
+39,067,0,Rural
+39,069,0,Rural
+39,071,0,Rural
+39,073,2,Metropolitan Statistical Area
+39,075,0,Rural
+39,077,1,Micropolitan Statistical Area
+39,079,0,Rural
+39,081,2,Metropolitan Statistical Area
+39,083,1,Micropolitan Statistical Area
+39,085,2,Metropolitan Statistical Area
+39,087,2,Metropolitan Statistical Area
+39,089,2,Metropolitan Statistical Area
+39,091,1,Micropolitan Statistical Area
+39,093,2,Metropolitan Statistical Area
+39,095,2,Metropolitan Statistical Area
+39,097,2,Metropolitan Statistical Area
+39,099,2,Metropolitan Statistical Area
+39,101,1,Micropolitan Statistical Area
+39,103,2,Metropolitan Statistical Area
+39,105,0,Rural
+39,107,1,Micropolitan Statistical Area
+39,109,2,Metropolitan Statistical Area
+39,111,0,Rural
+39,113,2,Metropolitan Statistical Area
+39,115,0,Rural
+39,117,2,Metropolitan Statistical Area
+39,119,1,Micropolitan Statistical Area
+39,121,0,Rural
+39,123,2,Metropolitan Statistical Area
+39,125,0,Rural
+39,127,2,Metropolitan Statistical Area
+39,129,2,Metropolitan Statistical Area
+39,131,0,Rural
+39,133,2,Metropolitan Statistical Area
+39,135,0,Rural
+39,137,0,Rural
+39,139,2,Metropolitan Statistical Area
+39,141,1,Micropolitan Statistical Area
+39,143,1,Micropolitan Statistical Area
+39,145,1,Micropolitan Statistical Area
+39,147,1,Micropolitan Statistical Area
+39,149,1,Micropolitan Statistical Area
+39,151,2,Metropolitan Statistical Area
+39,153,2,Metropolitan Statistical Area
+39,155,2,Metropolitan Statistical Area
+39,157,1,Micropolitan Statistical Area
+39,159,2,Metropolitan Statistical Area
+39,161,1,Micropolitan Statistical Area
+39,163,0,Rural
+39,165,2,Metropolitan Statistical Area
+39,167,1,Micropolitan Statistical Area
+39,169,1,Micropolitan Statistical Area
+39,171,0,Rural
+39,173,2,Metropolitan Statistical Area
+39,175,0,Rural
+40,000,NA,NA
+40,001,0,Rural
+40,003,0,Rural
+40,005,0,Rural
+40,007,0,Rural
+40,009,1,Micropolitan Statistical Area
+40,011,0,Rural
+40,013,1,Micropolitan Statistical Area
+40,015,0,Rural
+40,017,2,Metropolitan Statistical Area
+40,019,1,Micropolitan Statistical Area
+40,021,1,Micropolitan Statistical Area
+40,023,0,Rural
+40,025,0,Rural
+40,027,2,Metropolitan Statistical Area
+40,029,0,Rural
+40,031,2,Metropolitan Statistical Area
+40,033,2,Metropolitan Statistical Area
+40,035,0,Rural
+40,037,2,Metropolitan Statistical Area
+40,039,1,Micropolitan Statistical Area
+40,041,0,Rural
+40,043,0,Rural
+40,045,0,Rural
+40,047,2,Metropolitan Statistical Area
+40,049,0,Rural
+40,051,2,Metropolitan Statistical Area
+40,053,0,Rural
+40,055,0,Rural
+40,057,0,Rural
+40,059,0,Rural
+40,061,0,Rural
+40,063,0,Rural
+40,065,1,Micropolitan Statistical Area
+40,067,0,Rural
+40,069,0,Rural
+40,071,1,Micropolitan Statistical Area
+40,073,0,Rural
+40,075,0,Rural
+40,077,0,Rural
+40,079,0,Rural
+40,081,2,Metropolitan Statistical Area
+40,083,2,Metropolitan Statistical Area
+40,085,0,Rural
+40,087,2,Metropolitan Statistical Area
+40,089,0,Rural
+40,091,0,Rural
+40,093,0,Rural
+40,095,0,Rural
+40,097,0,Rural
+40,099,0,Rural
+40,101,1,Micropolitan Statistical Area
+40,103,0,Rural
+40,105,0,Rural
+40,107,0,Rural
+40,109,2,Metropolitan Statistical Area
+40,111,2,Metropolitan Statistical Area
+40,113,2,Metropolitan Statistical Area
+40,115,1,Micropolitan Statistical Area
+40,117,2,Metropolitan Statistical Area
+40,119,1,Micropolitan Statistical Area
+40,121,1,Micropolitan Statistical Area
+40,123,1,Micropolitan Statistical Area
+40,125,1,Micropolitan Statistical Area
+40,127,0,Rural
+40,129,0,Rural
+40,131,2,Metropolitan Statistical Area
+40,133,0,Rural
+40,135,2,Metropolitan Statistical Area
+40,137,1,Micropolitan Statistical Area
+40,139,1,Micropolitan Statistical Area
+40,141,0,Rural
+40,143,2,Metropolitan Statistical Area
+40,145,2,Metropolitan Statistical Area
+40,147,1,Micropolitan Statistical Area
+40,149,1,Micropolitan Statistical Area
+40,151,0,Rural
+40,153,1,Micropolitan Statistical Area
+41,000,NA,NA
+41,001,1,Micropolitan Statistical Area
+41,003,2,Metropolitan Statistical Area
+41,005,2,Metropolitan Statistical Area
+41,007,1,Micropolitan Statistical Area
+41,009,2,Metropolitan Statistical Area
+41,011,1,Micropolitan Statistical Area
+41,013,2,Metropolitan Statistical Area
+41,015,1,Micropolitan Statistical Area
+41,017,2,Metropolitan Statistical Area
+41,019,1,Micropolitan Statistical Area
+41,021,0,Rural
+41,023,0,Rural
+41,025,0,Rural
+41,027,1,Micropolitan Statistical Area
+41,029,2,Metropolitan Statistical Area
+41,031,2,Metropolitan Statistical Area
+41,033,2,Metropolitan Statistical Area
+41,035,1,Micropolitan Statistical Area
+41,037,0,Rural
+41,039,2,Metropolitan Statistical Area
+41,041,1,Micropolitan Statistical Area
+41,043,2,Metropolitan Statistical Area
+41,045,1,Micropolitan Statistical Area
+41,047,2,Metropolitan Statistical Area
+41,049,1,Micropolitan Statistical Area
+41,051,2,Metropolitan Statistical Area
+41,053,2,Metropolitan Statistical Area
+41,055,0,Rural
+41,057,0,Rural
+41,059,1,Micropolitan Statistical Area
+41,061,1,Micropolitan Statistical Area
+41,063,0,Rural
+41,065,1,Micropolitan Statistical Area
+41,067,2,Metropolitan Statistical Area
+41,069,0,Rural
+41,071,2,Metropolitan Statistical Area
+42,000,NA,NA
+42,001,2,Metropolitan Statistical Area
+42,003,2,Metropolitan Statistical Area
+42,005,2,Metropolitan Statistical Area
+42,007,2,Metropolitan Statistical Area
+42,009,0,Rural
+42,011,2,Metropolitan Statistical Area
+42,013,2,Metropolitan Statistical Area
+42,015,1,Micropolitan Statistical Area
+42,017,2,Metropolitan Statistical Area
+42,019,2,Metropolitan Statistical Area
+42,021,2,Metropolitan Statistical Area
+42,023,0,Rural
+42,025,2,Metropolitan Statistical Area
+42,027,2,Metropolitan Statistical Area
+42,029,2,Metropolitan Statistical Area
+42,031,0,Rural
+42,033,1,Micropolitan Statistical Area
+42,035,1,Micropolitan Statistical Area
+42,037,1,Micropolitan Statistical Area
+42,039,1,Micropolitan Statistical Area
+42,041,2,Metropolitan Statistical Area
+42,043,2,Metropolitan Statistical Area
+42,045,2,Metropolitan Statistical Area
+42,047,1,Micropolitan Statistical Area
+42,049,2,Metropolitan Statistical Area
+42,051,2,Metropolitan Statistical Area
+42,053,0,Rural
+42,055,2,Metropolitan Statistical Area
+42,057,0,Rural
+42,059,0,Rural
+42,061,1,Micropolitan Statistical Area
+42,063,1,Micropolitan Statistical Area
+42,065,0,Rural
+42,067,0,Rural
+42,069,2,Metropolitan Statistical Area
+42,071,2,Metropolitan Statistical Area
+42,073,2,Metropolitan Statistical Area
+42,075,2,Metropolitan Statistical Area
+42,077,2,Metropolitan Statistical Area
+42,079,2,Metropolitan Statistical Area
+42,081,2,Metropolitan Statistical Area
+42,083,1,Micropolitan Statistical Area
+42,085,1,Micropolitan Statistical Area
+42,087,1,Micropolitan Statistical Area
+42,089,1,Micropolitan Statistical Area
+42,091,2,Metropolitan Statistical Area
+42,093,1,Micropolitan Statistical Area
+42,095,2,Metropolitan Statistical Area
+42,097,1,Micropolitan Statistical Area
+42,099,2,Metropolitan Statistical Area
+42,101,2,Metropolitan Statistical Area
+42,103,1,Micropolitan Statistical Area
+42,105,0,Rural
+42,107,1,Micropolitan Statistical Area
+42,109,1,Micropolitan Statistical Area
+42,111,1,Micropolitan Statistical Area
+42,113,0,Rural
+42,115,0,Rural
+42,117,0,Rural
+42,119,1,Micropolitan Statistical Area
+42,121,1,Micropolitan Statistical Area
+42,123,1,Micropolitan Statistical Area
+42,125,2,Metropolitan Statistical Area
+42,127,0,Rural
+42,129,2,Metropolitan Statistical Area
+42,131,2,Metropolitan Statistical Area
+42,133,2,Metropolitan Statistical Area
+44,000,NA,NA
+44,001,2,Metropolitan Statistical Area
+44,003,2,Metropolitan Statistical Area
+44,005,2,Metropolitan Statistical Area
+44,007,2,Metropolitan Statistical Area
+44,009,2,Metropolitan Statistical Area
+45,000,NA,NA
+45,001,1,Micropolitan Statistical Area
+45,003,2,Metropolitan Statistical Area
+45,005,0,Rural
+45,007,2,Metropolitan Statistical Area
+45,009,0,Rural
+45,011,0,Rural
+45,013,2,Metropolitan Statistical Area
+45,015,2,Metropolitan Statistical Area
+45,017,2,Metropolitan Statistical Area
+45,019,2,Metropolitan Statistical Area
+45,021,1,Micropolitan Statistical Area
+45,023,2,Metropolitan Statistical Area
+45,025,0,Rural
+45,027,0,Rural
+45,029,0,Rural
+45,031,2,Metropolitan Statistical Area
+45,033,0,Rural
+45,035,2,Metropolitan Statistical Area
+45,037,2,Metropolitan Statistical Area
+45,039,2,Metropolitan Statistical Area
+45,041,2,Metropolitan Statistical Area
+45,043,1,Micropolitan Statistical Area
+45,045,2,Metropolitan Statistical Area
+45,047,1,Micropolitan Statistical Area
+45,049,0,Rural
+45,051,2,Metropolitan Statistical Area
+45,053,2,Metropolitan Statistical Area
+45,055,2,Metropolitan Statistical Area
+45,057,2,Metropolitan Statistical Area
+45,059,2,Metropolitan Statistical Area
+45,061,0,Rural
+45,063,2,Metropolitan Statistical Area
+45,065,0,Rural
+45,067,0,Rural
+45,069,0,Rural
+45,071,1,Micropolitan Statistical Area
+45,073,1,Micropolitan Statistical Area
+45,075,1,Micropolitan Statistical Area
+45,077,2,Metropolitan Statistical Area
+45,079,2,Metropolitan Statistical Area
+45,081,2,Metropolitan Statistical Area
+45,083,2,Metropolitan Statistical Area
+45,085,2,Metropolitan Statistical Area
+45,087,2,Metropolitan Statistical Area
+45,089,0,Rural
+45,091,2,Metropolitan Statistical Area
+46,000,NA,NA
+46,003,0,Rural
+46,005,1,Micropolitan Statistical Area
+46,007,0,Rural
+46,009,0,Rural
+46,011,1,Micropolitan Statistical Area
+46,013,1,Micropolitan Statistical Area
+46,015,0,Rural
+46,017,0,Rural
+46,019,0,Rural
+46,021,0,Rural
+46,023,0,Rural
+46,025,0,Rural
+46,027,1,Micropolitan Statistical Area
+46,029,1,Micropolitan Statistical Area
+46,031,0,Rural
+46,033,2,Metropolitan Statistical Area
+46,035,1,Micropolitan Statistical Area
+46,037,0,Rural
+46,039,0,Rural
+46,041,0,Rural
+46,043,0,Rural
+46,045,1,Micropolitan Statistical Area
+46,047,0,Rural
+46,049,0,Rural
+46,051,0,Rural
+46,053,0,Rural
+46,055,0,Rural
+46,057,0,Rural
+46,059,0,Rural
+46,061,1,Micropolitan Statistical Area
+46,063,0,Rural
+46,065,1,Micropolitan Statistical Area
+46,067,0,Rural
+46,069,0,Rural
+46,071,0,Rural
+46,073,0,Rural
+46,075,0,Rural
+46,077,0,Rural
+46,079,0,Rural
+46,081,1,Micropolitan Statistical Area
+46,083,2,Metropolitan Statistical Area
+46,085,0,Rural
+46,087,2,Metropolitan Statistical Area
+46,089,0,Rural
+46,091,0,Rural
+46,093,2,Metropolitan Statistical Area
+46,095,0,Rural
+46,097,0,Rural
+46,099,2,Metropolitan Statistical Area
+46,101,0,Rural
+46,102,0,Rural
+46,103,2,Metropolitan Statistical Area
+46,105,0,Rural
+46,107,0,Rural
+46,109,0,Rural
+46,111,1,Micropolitan Statistical Area
+46,115,0,Rural
+46,117,1,Micropolitan Statistical Area
+46,119,0,Rural
+46,121,0,Rural
+46,123,0,Rural
+46,125,2,Metropolitan Statistical Area
+46,127,2,Metropolitan Statistical Area
+46,129,0,Rural
+46,135,1,Micropolitan Statistical Area
+46,137,0,Rural
+47,000,NA,NA
+47,001,2,Metropolitan Statistical Area
+47,003,1,Micropolitan Statistical Area
+47,005,0,Rural
+47,007,0,Rural
+47,009,2,Metropolitan Statistical Area
+47,011,2,Metropolitan Statistical Area
+47,013,2,Metropolitan Statistical Area
+47,015,2,Metropolitan Statistical Area
+47,017,0,Rural
+47,019,2,Metropolitan Statistical Area
+47,021,2,Metropolitan Statistical Area
+47,023,2,Metropolitan Statistical Area
+47,025,0,Rural
+47,027,0,Rural
+47,029,1,Micropolitan Statistical Area
+47,031,1,Micropolitan Statistical Area
+47,033,2,Metropolitan Statistical Area
+47,035,1,Micropolitan Statistical Area
+47,037,2,Metropolitan Statistical Area
+47,039,0,Rural
+47,041,0,Rural
+47,043,2,Metropolitan Statistical Area
+47,045,1,Micropolitan Statistical Area
+47,047,2,Metropolitan Statistical Area
+47,049,0,Rural
+47,051,1,Micropolitan Statistical Area
+47,053,2,Metropolitan Statistical Area
+47,055,0,Rural
+47,057,2,Metropolitan Statistical Area
+47,059,1,Micropolitan Statistical Area
+47,061,0,Rural
+47,063,2,Metropolitan Statistical Area
+47,065,2,Metropolitan Statistical Area
+47,067,0,Rural
+47,069,0,Rural
+47,071,0,Rural
+47,073,2,Metropolitan Statistical Area
+47,075,0,Rural
+47,077,0,Rural
+47,079,1,Micropolitan Statistical Area
+47,081,2,Metropolitan Statistical Area
+47,083,0,Rural
+47,085,0,Rural
+47,087,1,Micropolitan Statistical Area
+47,089,2,Metropolitan Statistical Area
+47,091,0,Rural
+47,093,2,Metropolitan Statistical Area
+47,095,0,Rural
+47,097,0,Rural
+47,099,1,Micropolitan Statistical Area
+47,101,0,Rural
+47,103,1,Micropolitan Statistical Area
+47,105,2,Metropolitan Statistical Area
+47,107,1,Micropolitan Statistical Area
+47,109,0,Rural
+47,111,2,Metropolitan Statistical Area
+47,113,2,Metropolitan Statistical Area
+47,115,2,Metropolitan Statistical Area
+47,117,1,Micropolitan Statistical Area
+47,119,2,Metropolitan Statistical Area
+47,121,1,Micropolitan Statistical Area
+47,123,0,Rural
+47,125,2,Metropolitan Statistical Area
+47,127,1,Micropolitan Statistical Area
+47,129,2,Metropolitan Statistical Area
+47,131,1,Micropolitan Statistical Area
+47,133,1,Micropolitan Statistical Area
+47,135,0,Rural
+47,137,0,Rural
+47,139,2,Metropolitan Statistical Area
+47,141,1,Micropolitan Statistical Area
+47,143,0,Rural
+47,145,2,Metropolitan Statistical Area
+47,147,2,Metropolitan Statistical Area
+47,149,2,Metropolitan Statistical Area
+47,151,0,Rural
+47,153,2,Metropolitan Statistical Area
+47,155,1,Micropolitan Statistical Area
+47,157,2,Metropolitan Statistical Area
+47,159,2,Metropolitan Statistical Area
+47,161,2,Metropolitan Statistical Area
+47,163,2,Metropolitan Statistical Area
+47,165,2,Metropolitan Statistical Area
+47,167,2,Metropolitan Statistical Area
+47,169,2,Metropolitan Statistical Area
+47,171,2,Metropolitan Statistical Area
+47,173,2,Metropolitan Statistical Area
+47,175,0,Rural
+47,177,1,Micropolitan Statistical Area
+47,179,2,Metropolitan Statistical Area
+47,181,0,Rural
+47,183,1,Micropolitan Statistical Area
+47,185,1,Micropolitan Statistical Area
+47,187,2,Metropolitan Statistical Area
+47,189,2,Metropolitan Statistical Area
+48,000,NA,NA
+48,001,1,Micropolitan Statistical Area
+48,003,1,Micropolitan Statistical Area
+48,005,1,Micropolitan Statistical Area
+48,007,2,Metropolitan Statistical Area
+48,009,2,Metropolitan Statistical Area
+48,011,2,Metropolitan Statistical Area
+48,013,2,Metropolitan Statistical Area
+48,015,2,Metropolitan Statistical Area
+48,017,0,Rural
+48,019,2,Metropolitan Statistical Area
+48,021,2,Metropolitan Statistical Area
+48,023,0,Rural
+48,025,1,Micropolitan Statistical Area
+48,027,2,Metropolitan Statistical Area
+48,029,2,Metropolitan Statistical Area
+48,031,0,Rural
+48,033,0,Rural
+48,035,2,Metropolitan Statistical Area
+48,037,2,Metropolitan Statistical Area
+48,039,2,Metropolitan Statistical Area
+48,041,2,Metropolitan Statistical Area
+48,043,0,Rural
+48,045,0,Rural
+48,047,1,Micropolitan Statistical Area
+48,049,1,Micropolitan Statistical Area
+48,051,2,Metropolitan Statistical Area
+48,053,0,Rural
+48,055,2,Metropolitan Statistical Area
+48,057,1,Micropolitan Statistical Area
+48,059,2,Metropolitan Statistical Area
+48,061,2,Metropolitan Statistical Area
+48,063,1,Micropolitan Statistical Area
+48,065,2,Metropolitan Statistical Area
+48,067,0,Rural
+48,069,0,Rural
+48,071,2,Metropolitan Statistical Area
+48,073,1,Micropolitan Statistical Area
+48,075,0,Rural
+48,077,2,Metropolitan Statistical Area
+48,079,2,Metropolitan Statistical Area
+48,081,0,Rural
+48,083,0,Rural
+48,085,2,Metropolitan Statistical Area
+48,087,0,Rural
+48,089,0,Rural
+48,091,2,Metropolitan Statistical Area
+48,093,0,Rural
+48,095,0,Rural
+48,097,1,Micropolitan Statistical Area
+48,099,2,Metropolitan Statistical Area
+48,101,0,Rural
+48,103,0,Rural
+48,105,0,Rural
+48,107,2,Metropolitan Statistical Area
+48,109,0,Rural
+48,111,0,Rural
+48,113,2,Metropolitan Statistical Area
+48,115,0,Rural
+48,117,1,Micropolitan Statistical Area
+48,119,0,Rural
+48,121,2,Metropolitan Statistical Area
+48,123,0,Rural
+48,125,0,Rural
+48,127,0,Rural
+48,129,0,Rural
+48,131,0,Rural
+48,133,0,Rural
+48,135,2,Metropolitan Statistical Area
+48,137,0,Rural
+48,139,2,Metropolitan Statistical Area
+48,141,2,Metropolitan Statistical Area
+48,143,1,Micropolitan Statistical Area
+48,145,2,Metropolitan Statistical Area
+48,147,1,Micropolitan Statistical Area
+48,149,0,Rural
+48,151,0,Rural
+48,153,1,Micropolitan Statistical Area
+48,155,0,Rural
+48,157,2,Metropolitan Statistical Area
+48,159,0,Rural
+48,161,0,Rural
+48,163,0,Rural
+48,165,0,Rural
+48,167,2,Metropolitan Statistical Area
+48,169,2,Metropolitan Statistical Area
+48,171,1,Micropolitan Statistical Area
+48,173,0,Rural
+48,175,2,Metropolitan Statistical Area
+48,177,0,Rural
+48,179,1,Micropolitan Statistical Area
+48,181,2,Metropolitan Statistical Area
+48,183,2,Metropolitan Statistical Area
+48,185,0,Rural
+48,187,2,Metropolitan Statistical Area
+48,189,1,Micropolitan Statistical Area
+48,191,0,Rural
+48,193,0,Rural
+48,195,0,Rural
+48,197,0,Rural
+48,199,2,Metropolitan Statistical Area
+48,201,2,Metropolitan Statistical Area
+48,203,2,Metropolitan Statistical Area
+48,205,0,Rural
+48,207,0,Rural
+48,209,2,Metropolitan Statistical Area
+48,211,0,Rural
+48,213,1,Micropolitan Statistical Area
+48,215,2,Metropolitan Statistical Area
+48,217,0,Rural
+48,219,2,Metropolitan Statistical Area
+48,221,1,Micropolitan Statistical Area
+48,223,1,Micropolitan Statistical Area
+48,225,0,Rural
+48,227,1,Micropolitan Statistical Area
+48,229,2,Metropolitan Statistical Area
+48,231,2,Metropolitan Statistical Area
+48,233,1,Micropolitan Statistical Area
+48,235,2,Metropolitan Statistical Area
+48,237,0,Rural
+48,239,0,Rural
+48,241,0,Rural
+48,243,0,Rural
+48,245,2,Metropolitan Statistical Area
+48,247,0,Rural
+48,249,1,Micropolitan Statistical Area
+48,251,2,Metropolitan Statistical Area
+48,253,2,Metropolitan Statistical Area
+48,255,0,Rural
+48,257,2,Metropolitan Statistical Area
+48,259,2,Metropolitan Statistical Area
+48,261,0,Rural
+48,263,0,Rural
+48,265,1,Micropolitan Statistical Area
+48,267,0,Rural
+48,269,0,Rural
+48,271,0,Rural
+48,273,1,Micropolitan Statistical Area
+48,275,0,Rural
+48,277,1,Micropolitan Statistical Area
+48,279,0,Rural
+48,281,2,Metropolitan Statistical Area
+48,283,0,Rural
+48,285,0,Rural
+48,287,0,Rural
+48,289,0,Rural
+48,291,2,Metropolitan Statistical Area
+48,293,0,Rural
+48,295,0,Rural
+48,297,0,Rural
+48,299,0,Rural
+48,301,0,Rural
+48,303,2,Metropolitan Statistical Area
+48,305,2,Metropolitan Statistical Area
+48,307,0,Rural
+48,309,2,Metropolitan Statistical Area
+48,311,0,Rural
+48,313,0,Rural
+48,315,0,Rural
+48,317,2,Metropolitan Statistical Area
+48,319,0,Rural
+48,321,1,Micropolitan Statistical Area
+48,323,2,Metropolitan Statistical Area
+48,325,2,Metropolitan Statistical Area
+48,327,0,Rural
+48,329,2,Metropolitan Statistical Area
+48,331,0,Rural
+48,333,0,Rural
+48,335,0,Rural
+48,337,0,Rural
+48,339,2,Metropolitan Statistical Area
+48,341,1,Micropolitan Statistical Area
+48,343,1,Micropolitan Statistical Area
+48,345,0,Rural
+48,347,1,Micropolitan Statistical Area
+48,349,1,Micropolitan Statistical Area
+48,351,0,Rural
+48,353,1,Micropolitan Statistical Area
+48,355,2,Metropolitan Statistical Area
+48,357,0,Rural
+48,359,2,Metropolitan Statistical Area
+48,361,2,Metropolitan Statistical Area
+48,363,1,Micropolitan Statistical Area
+48,365,0,Rural
+48,367,2,Metropolitan Statistical Area
+48,369,0,Rural
+48,371,0,Rural
+48,373,0,Rural
+48,375,2,Metropolitan Statistical Area
+48,377,0,Rural
+48,379,0,Rural
+48,381,2,Metropolitan Statistical Area
+48,383,0,Rural
+48,385,0,Rural
+48,387,1,Micropolitan Statistical Area
+48,389,1,Micropolitan Statistical Area
+48,391,0,Rural
+48,393,1,Micropolitan Statistical Area
+48,395,2,Metropolitan Statistical Area
+48,397,2,Metropolitan Statistical Area
+48,399,0,Rural
+48,401,2,Metropolitan Statistical Area
+48,403,0,Rural
+48,405,0,Rural
+48,407,2,Metropolitan Statistical Area
+48,409,2,Metropolitan Statistical Area
+48,411,0,Rural
+48,413,0,Rural
+48,415,1,Micropolitan Statistical Area
+48,417,0,Rural
+48,419,0,Rural
+48,421,0,Rural
+48,423,2,Metropolitan Statistical Area
+48,425,0,Rural
+48,427,1,Micropolitan Statistical Area
+48,429,0,Rural
+48,431,0,Rural
+48,433,0,Rural
+48,435,0,Rural
+48,437,0,Rural
+48,439,2,Metropolitan Statistical Area
+48,441,2,Metropolitan Statistical Area
+48,443,0,Rural
+48,445,0,Rural
+48,447,0,Rural
+48,449,1,Micropolitan Statistical Area
+48,451,2,Metropolitan Statistical Area
+48,453,2,Metropolitan Statistical Area
+48,455,0,Rural
+48,457,0,Rural
+48,459,2,Metropolitan Statistical Area
+48,461,0,Rural
+48,463,1,Micropolitan Statistical Area
+48,465,1,Micropolitan Statistical Area
+48,467,0,Rural
+48,469,2,Metropolitan Statistical Area
+48,471,1,Micropolitan Statistical Area
+48,473,2,Metropolitan Statistical Area
+48,475,0,Rural
+48,477,1,Micropolitan Statistical Area
+48,479,2,Metropolitan Statistical Area
+48,481,1,Micropolitan Statistical Area
+48,483,0,Rural
+48,485,2,Metropolitan Statistical Area
+48,487,1,Micropolitan Statistical Area
+48,489,1,Micropolitan Statistical Area
+48,491,2,Metropolitan Statistical Area
+48,493,2,Metropolitan Statistical Area
+48,495,0,Rural
+48,497,2,Metropolitan Statistical Area
+48,499,0,Rural
+48,501,0,Rural
+48,503,0,Rural
+48,505,1,Micropolitan Statistical Area
+48,507,0,Rural
+49,000,NA,NA
+49,001,0,Rural
+49,003,1,Micropolitan Statistical Area
+49,005,2,Metropolitan Statistical Area
+49,007,1,Micropolitan Statistical Area
+49,009,0,Rural
+49,011,2,Metropolitan Statistical Area
+49,013,0,Rural
+49,015,0,Rural
+49,017,0,Rural
+49,019,0,Rural
+49,021,1,Micropolitan Statistical Area
+49,023,2,Metropolitan Statistical Area
+49,025,0,Rural
+49,027,0,Rural
+49,029,2,Metropolitan Statistical Area
+49,031,0,Rural
+49,033,1,Micropolitan Statistical Area
+49,035,2,Metropolitan Statistical Area
+49,037,0,Rural
+49,039,0,Rural
+49,041,0,Rural
+49,043,1,Micropolitan Statistical Area
+49,045,2,Metropolitan Statistical Area
+49,047,1,Micropolitan Statistical Area
+49,049,2,Metropolitan Statistical Area
+49,051,1,Micropolitan Statistical Area
+49,053,2,Metropolitan Statistical Area
+49,055,0,Rural
+49,057,2,Metropolitan Statistical Area
+50,000,NA,NA
+50,001,0,Rural
+50,003,1,Micropolitan Statistical Area
+50,005,0,Rural
+50,007,2,Metropolitan Statistical Area
+50,009,0,Rural
+50,011,2,Metropolitan Statistical Area
+50,013,2,Metropolitan Statistical Area
+50,015,0,Rural
+50,017,1,Micropolitan Statistical Area
+50,019,0,Rural
+50,021,1,Micropolitan Statistical Area
+50,023,1,Micropolitan Statistical Area
+50,025,1,Micropolitan Statistical Area
+50,027,1,Micropolitan Statistical Area
+51,000,NA,NA
+51,001,0,Rural
+51,003,2,Metropolitan Statistical Area
+51,005,0,Rural
+51,007,2,Metropolitan Statistical Area
+51,009,2,Metropolitan Statistical Area
+51,011,2,Metropolitan Statistical Area
+51,013,2,Metropolitan Statistical Area
+51,015,2,Metropolitan Statistical Area
+51,017,0,Rural
+51,019,2,Metropolitan Statistical Area
+51,021,0,Rural
+51,023,2,Metropolitan Statistical Area
+51,025,0,Rural
+51,027,0,Rural
+51,029,0,Rural
+51,031,2,Metropolitan Statistical Area
+51,033,0,Rural
+51,035,0,Rural
+51,036,2,Metropolitan Statistical Area
+51,037,0,Rural
+51,041,2,Metropolitan Statistical Area
+51,043,2,Metropolitan Statistical Area
+51,045,2,Metropolitan Statistical Area
+51,047,2,Metropolitan Statistical Area
+51,049,0,Rural
+51,051,0,Rural
+51,053,2,Metropolitan Statistical Area
+51,057,0,Rural
+51,059,2,Metropolitan Statistical Area
+51,061,2,Metropolitan Statistical Area
+51,063,2,Metropolitan Statistical Area
+51,065,2,Metropolitan Statistical Area
+51,067,2,Metropolitan Statistical Area
+51,069,2,Metropolitan Statistical Area
+51,071,2,Metropolitan Statistical Area
+51,073,2,Metropolitan Statistical Area
+51,075,2,Metropolitan Statistical Area
+51,077,0,Rural
+51,079,2,Metropolitan Statistical Area
+51,081,0,Rural
+51,083,0,Rural
+51,085,2,Metropolitan Statistical Area
+51,087,2,Metropolitan Statistical Area
+51,089,1,Micropolitan Statistical Area
+51,091,0,Rural
+51,093,2,Metropolitan Statistical Area
+51,095,2,Metropolitan Statistical Area
+51,097,2,Metropolitan Statistical Area
+51,099,0,Rural
+51,101,2,Metropolitan Statistical Area
+51,103,0,Rural
+51,105,0,Rural
+51,107,2,Metropolitan Statistical Area
+51,109,0,Rural
+51,111,0,Rural
+51,113,0,Rural
+51,115,2,Metropolitan Statistical Area
+51,117,0,Rural
+51,119,0,Rural
+51,121,2,Metropolitan Statistical Area
+51,125,2,Metropolitan Statistical Area
+51,127,2,Metropolitan Statistical Area
+51,131,0,Rural
+51,133,0,Rural
+51,135,0,Rural
+51,137,1,Micropolitan Statistical Area
+51,139,0,Rural
+51,141,0,Rural
+51,143,1,Micropolitan Statistical Area
+51,145,2,Metropolitan Statistical Area
+51,147,0,Rural
+51,149,2,Metropolitan Statistical Area
+51,153,2,Metropolitan Statistical Area
+51,155,2,Metropolitan Statistical Area
+51,157,2,Metropolitan Statistical Area
+51,159,0,Rural
+51,161,2,Metropolitan Statistical Area
+51,163,0,Rural
+51,165,2,Metropolitan Statistical Area
+51,167,0,Rural
+51,169,2,Metropolitan Statistical Area
+51,171,0,Rural
+51,173,0,Rural
+51,175,0,Rural
+51,177,2,Metropolitan Statistical Area
+51,179,2,Metropolitan Statistical Area
+51,181,2,Metropolitan Statistical Area
+51,183,2,Metropolitan Statistical Area
+51,185,1,Micropolitan Statistical Area
+51,187,2,Metropolitan Statistical Area
+51,191,2,Metropolitan Statistical Area
+51,193,0,Rural
+51,195,0,Rural
+51,197,0,Rural
+51,199,2,Metropolitan Statistical Area
+51,510,2,Metropolitan Statistical Area
+51,520,2,Metropolitan Statistical Area
+51,530,0,Rural
+51,540,2,Metropolitan Statistical Area
+51,550,2,Metropolitan Statistical Area
+51,570,2,Metropolitan Statistical Area
+51,580,0,Rural
+51,590,1,Micropolitan Statistical Area
+51,595,0,Rural
+51,600,2,Metropolitan Statistical Area
+51,610,2,Metropolitan Statistical Area
+51,620,0,Rural
+51,630,2,Metropolitan Statistical Area
+51,640,0,Rural
+51,650,2,Metropolitan Statistical Area
+51,660,2,Metropolitan Statistical Area
+51,670,2,Metropolitan Statistical Area
+51,678,0,Rural
+51,680,2,Metropolitan Statistical Area
+51,683,2,Metropolitan Statistical Area
+51,685,2,Metropolitan Statistical Area
+51,690,1,Micropolitan Statistical Area
+51,700,2,Metropolitan Statistical Area
+51,710,2,Metropolitan Statistical Area
+51,720,0,Rural
+51,730,2,Metropolitan Statistical Area
+51,735,2,Metropolitan Statistical Area
+51,740,2,Metropolitan Statistical Area
+51,750,2,Metropolitan Statistical Area
+51,760,2,Metropolitan Statistical Area
+51,770,2,Metropolitan Statistical Area
+51,775,2,Metropolitan Statistical Area
+51,790,2,Metropolitan Statistical Area
+51,800,2,Metropolitan Statistical Area
+51,810,2,Metropolitan Statistical Area
+51,820,2,Metropolitan Statistical Area
+51,830,2,Metropolitan Statistical Area
+51,840,2,Metropolitan Statistical Area
+53,000,NA,NA
+53,001,1,Micropolitan Statistical Area
+53,003,2,Metropolitan Statistical Area
+53,005,2,Metropolitan Statistical Area
+53,007,2,Metropolitan Statistical Area
+53,009,1,Micropolitan Statistical Area
+53,011,2,Metropolitan Statistical Area
+53,013,0,Rural
+53,015,2,Metropolitan Statistical Area
+53,017,2,Metropolitan Statistical Area
+53,019,0,Rural
+53,021,2,Metropolitan Statistical Area
+53,023,0,Rural
+53,025,1,Micropolitan Statistical Area
+53,027,1,Micropolitan Statistical Area
+53,029,1,Micropolitan Statistical Area
+53,031,1,Micropolitan Statistical Area
+53,033,2,Metropolitan Statistical Area
+53,035,2,Metropolitan Statistical Area
+53,037,1,Micropolitan Statistical Area
+53,039,0,Rural
+53,041,1,Micropolitan Statistical Area
+53,043,0,Rural
+53,045,1,Micropolitan Statistical Area
+53,047,0,Rural
+53,049,0,Rural
+53,051,0,Rural
+53,053,2,Metropolitan Statistical Area
+53,055,0,Rural
+53,057,2,Metropolitan Statistical Area
+53,059,2,Metropolitan Statistical Area
+53,061,2,Metropolitan Statistical Area
+53,063,2,Metropolitan Statistical Area
+53,065,2,Metropolitan Statistical Area
+53,067,2,Metropolitan Statistical Area
+53,069,0,Rural
+53,071,2,Metropolitan Statistical Area
+53,073,2,Metropolitan Statistical Area
+53,075,1,Micropolitan Statistical Area
+53,077,2,Metropolitan Statistical Area
+54,000,NA,NA
+54,001,0,Rural
+54,003,2,Metropolitan Statistical Area
+54,005,2,Metropolitan Statistical Area
+54,007,0,Rural
+54,009,2,Metropolitan Statistical Area
+54,011,2,Metropolitan Statistical Area
+54,013,0,Rural
+54,015,2,Metropolitan Statistical Area
+54,017,1,Micropolitan Statistical Area
+54,019,2,Metropolitan Statistical Area
+54,021,0,Rural
+54,023,0,Rural
+54,025,0,Rural
+54,027,2,Metropolitan Statistical Area
+54,029,2,Metropolitan Statistical Area
+54,031,0,Rural
+54,033,1,Micropolitan Statistical Area
+54,035,0,Rural
+54,037,2,Metropolitan Statistical Area
+54,039,2,Metropolitan Statistical Area
+54,041,0,Rural
+54,043,0,Rural
+54,045,0,Rural
+54,047,0,Rural
+54,049,1,Micropolitan Statistical Area
+54,051,2,Metropolitan Statistical Area
+54,053,0,Rural
+54,055,1,Micropolitan Statistical Area
+54,057,1,Micropolitan Statistical Area
+54,059,0,Rural
+54,061,2,Metropolitan Statistical Area
+54,063,0,Rural
+54,065,2,Metropolitan Statistical Area
+54,067,0,Rural
+54,069,2,Metropolitan Statistical Area
+54,071,0,Rural
+54,073,0,Rural
+54,075,0,Rural
+54,077,2,Metropolitan Statistical Area
+54,079,2,Metropolitan Statistical Area
+54,081,2,Metropolitan Statistical Area
+54,083,1,Micropolitan Statistical Area
+54,085,0,Rural
+54,087,0,Rural
+54,089,0,Rural
+54,091,1,Micropolitan Statistical Area
+54,093,0,Rural
+54,095,0,Rural
+54,097,0,Rural
+54,099,2,Metropolitan Statistical Area
+54,101,0,Rural
+54,103,0,Rural
+54,105,2,Metropolitan Statistical Area
+54,107,2,Metropolitan Statistical Area
+54,109,0,Rural
+55,000,NA,NA
+55,001,0,Rural
+55,003,0,Rural
+55,005,1,Micropolitan Statistical Area
+55,007,0,Rural
+55,009,2,Metropolitan Statistical Area
+55,011,0,Rural
+55,013,0,Rural
+55,015,2,Metropolitan Statistical Area
+55,017,2,Metropolitan Statistical Area
+55,019,0,Rural
+55,021,2,Metropolitan Statistical Area
+55,023,0,Rural
+55,025,2,Metropolitan Statistical Area
+55,027,1,Micropolitan Statistical Area
+55,029,0,Rural
+55,031,2,Metropolitan Statistical Area
+55,033,1,Micropolitan Statistical Area
+55,035,2,Metropolitan Statistical Area
+55,037,1,Micropolitan Statistical Area
+55,039,2,Metropolitan Statistical Area
+55,041,0,Rural
+55,043,1,Micropolitan Statistical Area
+55,045,2,Metropolitan Statistical Area
+55,047,0,Rural
+55,049,2,Metropolitan Statistical Area
+55,051,0,Rural
+55,053,0,Rural
+55,055,1,Micropolitan Statistical Area
+55,057,0,Rural
+55,059,2,Metropolitan Statistical Area
+55,061,2,Metropolitan Statistical Area
+55,063,2,Metropolitan Statistical Area
+55,065,0,Rural
+55,067,0,Rural
+55,069,0,Rural
+55,071,1,Micropolitan Statistical Area
+55,073,2,Metropolitan Statistical Area
+55,075,1,Micropolitan Statistical Area
+55,077,0,Rural
+55,078,1,Micropolitan Statistical Area
+55,079,2,Metropolitan Statistical Area
+55,081,1,Micropolitan Statistical Area
+55,083,2,Metropolitan Statistical Area
+55,085,0,Rural
+55,087,2,Metropolitan Statistical Area
+55,089,2,Metropolitan Statistical Area
+55,091,0,Rural
+55,093,2,Metropolitan Statistical Area
+55,095,0,Rural
+55,097,1,Micropolitan Statistical Area
+55,099,0,Rural
+55,101,2,Metropolitan Statistical Area
+55,103,0,Rural
+55,105,2,Metropolitan Statistical Area
+55,107,0,Rural
+55,109,2,Metropolitan Statistical Area
+55,111,1,Micropolitan Statistical Area
+55,113,0,Rural
+55,115,1,Micropolitan Statistical Area
+55,117,2,Metropolitan Statistical Area
+55,119,0,Rural
+55,121,0,Rural
+55,123,2,Metropolitan Statistical Area
+55,125,0,Rural
+55,127,1,Micropolitan Statistical Area
+55,129,0,Rural
+55,131,2,Metropolitan Statistical Area
+55,133,2,Metropolitan Statistical Area
+55,135,0,Rural
+55,137,0,Rural
+55,139,2,Metropolitan Statistical Area
+55,141,1,Micropolitan Statistical Area
+56,000,NA,NA
+56,001,1,Micropolitan Statistical Area
+56,003,0,Rural
+56,005,1,Micropolitan Statistical Area
+56,007,0,Rural
+56,009,0,Rural
+56,011,0,Rural
+56,013,1,Micropolitan Statistical Area
+56,015,0,Rural
+56,017,0,Rural
+56,019,0,Rural
+56,021,2,Metropolitan Statistical Area
+56,023,0,Rural
+56,025,2,Metropolitan Statistical Area
+56,027,0,Rural
+56,029,1,Micropolitan Statistical Area
+56,031,0,Rural
+56,033,1,Micropolitan Statistical Area
+56,035,0,Rural
+56,037,1,Micropolitan Statistical Area
+56,039,1,Micropolitan Statistical Area
+56,041,1,Micropolitan Statistical Area
+56,043,0,Rural
+56,045,0,Rural
