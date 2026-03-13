@@ -1,0 +1,232 @@
+---
+title: "v183 Feelings of Loneliness AND v184 Lack of Social and Emotional Support"
+author: "Hannah Olson-Williams"
+output: html_document
+---
+
+Both v183 Feelings of Loneliness and v184 Lack of Social and Emotional Support come from BRFSS PLACES data. 
+County level data are available for download here: 
+https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb/about_data
+
+# v183 feelings of loneliness 
+
+# Description 
+Percentage of adults reporting that they always, usually or sometimes feel lonely.
+
+# Connection to health 
+Loneliness is a complicated emotional and social experience. Circumstances that cause one person to experience loneliness may not contribute to someone else feeling lonely.1 Loneliness is usually defined as a distressing feeling that comes from a gap between the social connection someone wants and what they have.2,3 We measure loneliness as a percentage of adults in a county that report that they always, usually or sometimes feel lonely.  
+
+Loneliness can stem from the quantity or quality of relationships.2 It can arise because an individual has fewer social contacts than they would like, or because the level of intimacy they desire in their existing relationships is not present.1 Worldviews that promote prejudice, fear or hostility toward groups of people based on their identities — such as their race or sexuality — create conditions in which people with these stigmatized identities face barriers to health. People who belong to groups that have been devalued by society may feel lonely more often and may experience a stronger negative impact on their health because of this loneliness.4 For example, bisexual and transgender individuals report some of the highest rates of loneliness.1 A 2022 study found that the prevalence of loneliness was 56.7% for bisexual individuals and ranged from 56.4% to 63.9% for transgender individuals.1 Stigma like biphobia and transphobia contribute to negative worldviews of LGBTQ+ people and could contribute to the high rates of loneliness experienced by these individuals. A lack of funding for research specific to these individuals contributes to a lack of evidence-based interventions, further marginalization and increased rates of loneliness for LGBTQ+ people.4,5 
+
+# Feelings of Loneliness 
+Feelings of Loneliness is the percentage of adults in a county who report that they always, usually or sometimes feel lonely. 
+
+## Feelings of Loneliness estimates are age-adjusted  
+We report an age-adjusted rate in order to fairly compare counties with differing age structures.
+
+## Feelings of Loneliness estimates are created using statistical modeling  
+Surveys collect information about a limited portion of a population. Statistical modeling can be used to predict how people who share certain characteristics with those surveyed may have responded to the survey. Modeling can increase the power of survey data by generating more stable estimates for places with small numbers of residents or survey responses. The Feelings of Loneliness estimates are produced from one year of survey data and are created using complex statistical modeling. For more technical information on PLACES modeling using BRFSS data, please see their methodology.  
+
+There are also drawbacks to using modeled data. The smaller the population or sample size of a county, the more the estimates are derived from the model itself and the less they are based on survey responses. Models make assumptions about statistical relationships that may not apply in all cases. Finally, there is no perfect model and each model generally has limitations specific to its methods. 
+
+## Caution should be used when comparing these estimates across states  
+BRFSS survey data are collected independently by each state, which could result in data collection differences. 
+
+## Caution should be used when comparing these estimates across years  
+Estimates may not be comparable across years because of methodological changes in PLACES. State and national values provided in the March 25, 2026 Supplemental Data Release are imputed as median of counties; state and national estimates in previous years were provided by PLACES. 
+
+## Can this measure progress? 
+Modeled estimates have specific drawbacks with their usefulness in tracking progress in communities. Modeled data may not capture the effects of local conditions, such as health promotion policies. To better understand and validate modeled estimates, it is helpful to supplement estimates with additional local data.
+
+Additionally, methodological changes may limit the ability to track progress across years using this measure. For more information on methodological changes, see above.
+
+## Measure limitations 
+Feelings of Loneliness data are only available for counties in states that administered the optional Social Determinants and Health Equity module of the Behavioral Risk Factor Surveillance System (BRFSS). In the 2025 Annual Data Release (2022 BRFSS), data are unavailable for 11 states: Arkansas, Colorado, Hawaii, Illinois, Louisiana, New York, North Dakota, Oregon, Pennsylvania, South Dakota, and Virginia. In the March 25, 2026 Supplemental Data Release (2023 BRFSS), data are unavailable for nine states: Colorado, Florida, Oregon, South Dakota, Tennessee, Texas, Vermont, Washington, and Wyoming.
+
+County-level data for Pennsylvania and Kentucky are drawn from the 2022 BRFSS because these states did not meet the minimum criteria for inclusion in the latest BRFSS public dataset.
+
+# Numerator 
+The numerator is the number of respondents who answered “always,” “usually” or “sometimes” to the question: “How often do you feel lonely?” 
+
+# Denominator 
+The denominator is the total number of adult respondents in a county.  
+
+# How do we calculate this measure?
+variables: LONELINESS_AdjPrev LONELINESS_Adj95CI
+State and national value are median of counties, change from Rankings 2025
+
+# import packages
+
+```{r}
+library(tidyverse)
+library(haven)
+library(here)
+```
+
+
+### standard county and state fips
+
+The final dataset will need to be aligned with standard FIPS codes and to include all counties and states.
+
+```{r}
+fips <-  bind_rows(
+  read_sas(here("inputs/county_fips_with_ct_old.sas7bdat")) ,
+  read_sas(here("inputs/state_fips.sas7bdat")))  %>% 
+  arrange(statecode, countycode) %>% 
+  glimpse()
+```
+
+# Load raw data 
+
+```{r}
+places = read.csv(here("raw_data/BRFSS/PLACES__Local_Data_for_Better_Health,_County_Data,_2025_release.csv"))
+
+```
+
+
+# some cleaning and calculating for v183 
+```{r}
+v183_clean = places %>% 
+  mutate(fipscode = stringr::str_pad(LocationID, 5, side = "left", pad = "0"),
+         statecode = substr(fipscode, 1,2), 
+         countycode = substr(fipscode, 3, 5)) %>% 
+  filter(MeasureId == "LONELINESS" & DataValueTypeID == "AgeAdjPrv") %>% 
+  mutate(v183_cilow = Low_Confidence_Limit/100, 
+         v183_cihigh = High_Confidence_Limit/100, 
+         v183_rawvalue = Data_Value/100) %>% 
+  filter(statecode != "00") %>% #double check that there are not state or ntl values here already 
+  filter(countycode != "000") %>% 
+  select(statecode, countycode, v183_cilow, v183_cihigh, v183_rawvalue)
+```
+
+# calculate state and national values (median of counties) for v183 
+```{r}
+v183statevals = v183_clean %>% group_by(statecode) %>% 
+  summarize(v183_rawvalue = median(v183_rawvalue)) %>% 
+  mutate(countycode = "000",
+         v183_cilow = NA, 
+         v183_cihigh = NA)
+
+v183ntlvals = v183_clean %>%
+  summarize(v183_rawvalue = median(v183_rawvalue)) %>% 
+  mutate(countycode = "000",
+         statecode = "00",
+         v183_cilow = NA, 
+         v183_cihigh = NA)
+```
+
+
+
+# add in standardized fipscodes  
+```{r}
+v183all = rbind(v183_clean, v183statevals, v183ntlvals) 
+
+v183 = merge(fips, v183all, by = c("statecode", "countycode"), all.x = TRUE) 
+```
+
+
+#save to project 
+```{r}
+readr::write_csv(v183, file = here("measure_datasets/v183_R2026.csv"))
+
+```
+
+
+
+# v184 lack of social and emotional support 
+
+# Description 
+Percentage of adults reporting that they sometimes, rarely, or never get the social and emotional support they need.
+
+# Connection to health 
+Much of our health depends on trusting relationships that provide us with comfort, guidance, and the information needed to navigate a society. Our relationships are a source of emotional and social support critical to thriving.1-3 Lack of Social and Emotional Support is measured as the percentage of adults in a county who say they sometimes, rarely or never get the social and emotional support they need.  
+
+People who report a lack of social and emotional support report higher rates of stress, frequent mental distress, and depression, as well as heart disease, stroke, dementia, type 2 diabetes, anxiety and premature death.4,5 A lack of support is associated with lower self-rated physical health, especially in older adults.6 About one in four US adults report a lack of social and emotional support.7    
+
+Societies that promote prejudice or make laws erasing the existence of de-valued groups of people create conditions where fewer people are willing to provide social or emotional support to people suspected of holding these devalued identities. In much of the Western world, this disproportionally harms people of color, recent immigrants, people living with disabilities, the elderly, and people who do not conform to the expectations of heterosexuality or traditional gender norms.4 A 2024 study by the CDC found that this lack of support was highest among individuals who identified as transgender female, gender nonconforming, members of racialized groups, those living in low-income households (earning less than $25,000) and those without a high school education.5
+
+
+## Lack of Social And Emotional Support is a percentage   
+Lack of Social and Emotional Support is the percentage of adults in a county reporting that they sometimes, rarely, or never get the social and emotional support they need. 
+
+Lack of Social And Emotional Support estimates are age-adjusted   
+We report an age-adjusted rate in order to fairly compare counties with differing age structures.
+
+Lack of Social And Emotional Support estimates are created using statistical modeling   
+Surveys collect information about a limited portion of a population. Statistical modeling can be used to predict how people who share certain characteristics with those surveyed may have responded to the survey. Modeling can increase the power of survey data by generating more stable estimates for places with small numbers of residents or survey responses. The Lack of Social and Emotional Support estimates are produced from one year of survey data and are created using complex statistical modeling. For more technical information on PLACES modeling using BRFSS data, please see their methodology. 
+
+There are also drawbacks to using modeled data. The smaller the population or sample size of a county, the more the estimates are derived from the model itself and the less they are based on survey responses. Models make assumptions about statistical relationships that may not apply in all cases. Finally, there is no perfect model and each model generally has limitations specific to its methods. 
+
+## Caution should be used when comparing these estimates across states   
+BRFSS survey data are collected independently by each state, which could result in data collection differences. 
+
+## Caution should be used when comparing these estimates across years   
+Estimates may not be comparable across years because of methodological changes in PLACES. 
+
+## Measure limitations   
+Generally, a lack of social and emotional support is viewed as the objective absence of meaningful social connections, whereas loneliness is the subjective experience that arises from a lack of support. Subjective survey measures like the BFRSS question used to estimate social and emotional support can be limited by differences in individual interpretation, situational context, mood or culture. These limitations can make meaningful data interpretation difficult, especially across demographic and contextual differences.
+
+Lack of Social and Emotional Support data are only available for counties in states that administered the optional Social Determinants and Health Equity module of the Behavioral Risk Factor Surveillance System (BRFSS). In the 2025 Annual Data Release (2022 BRFSS), data are unavailable for 11 states: Arkansas, Colorado, Hawaii, Illinois, Louisiana, New York, North Dakota, Oregon, Pennsylvania, South Dakota, and Virginia. In the March 25, 2026 Supplemental Data Release (2023 BRFSS), data are unavailable for nine states: Colorado, Florida, Oregon, South Dakota, Tennessee, Texas, Vermont, Washington, and Wyoming.
+
+County-level data for Pennsylvania and Kentucky are drawn from the 2022 BRFSS because these states did not meet the minimum criteria for inclusion in the latest BRFSS public dataset.
+
+## Numerator   
+The numerator is the number of respondents who answered “sometimes,” “rarely” or “never” to the question: “How often do you get the social and emotional support that you need?” 
+
+## Denominator   
+The denominator is the total number of adult respondents in a county.   
+
+
+# How do we calculate this measure?
+Variables: EMOTIONSPT_AdjPrev, EMOTIONSPT_Adj95CI
+State and National values calculated as median of counties
+
+
+# some cleaning and calculating for v184 
+(the same raw places data is used as for measure v183)
+```{r}
+v184_clean = places %>% 
+  mutate(fipscode = stringr::str_pad(LocationID, 5, side = "left", pad = "0"),
+         statecode = substr(fipscode, 1,2), 
+         countycode = substr(fipscode, 3, 5)) %>% 
+  filter(MeasureId == "EMOTIONSPT" & DataValueTypeID == "AgeAdjPrv") %>% 
+  mutate(v184_cilow = Low_Confidence_Limit/100, 
+         v184_cihigh = High_Confidence_Limit/100, 
+         v184_rawvalue = Data_Value/100) %>% 
+  filter(statecode != "00") %>% #double check that there are not state or ntl values here already 
+  filter(countycode != "000") %>% 
+  select(statecode, countycode, v184_cilow, v184_cihigh, v184_rawvalue)
+```
+
+# calculate state and national values (median of counties) for v184 
+```{r}
+v184statevals = v184_clean %>% group_by(statecode) %>% 
+  summarize(v184_rawvalue = median(v184_rawvalue)) %>% 
+  mutate(countycode = "000",
+         v184_cilow = NA, 
+         v184_cihigh = NA)
+
+v184ntl = v184_clean %>% 
+  summarize(v184_rawvalue = median(v184_rawvalue)) %>% 
+  mutate(countycode = "000",
+         statecode = "00", 
+         v184_cilow = NA, 
+         v184_cihigh = NA)
+```
+
+
+
+# add in standardized fipscodes  
+```{r}
+v184all = bind_rows(v184_clean, v184statevals, v184ntl) 
+
+v184 = merge(fips, v184all, by = c("statecode", "countycode"), all.x = TRUE) 
+```
+
+
+#save to project 
+```{r}
+readr::write_csv(v184, file = here("measure_datasets/v184_R2026.csv"))
+
+```
+
