@@ -1,5 +1,6 @@
 # County Health Rankings & Roadmaps Measure Calculations  
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://countyhealthrankings.github.io/welcome/contribute.html)
+[![DOI](https://zenodo.org/badge/19473865.svg)](https://zenodo.org/doi/10.5281/zenodo.19473865)
 
 This repository contains code and data to replicate some measures for the [County Health Rankings & Roadmaps annual data release](https://www.countyhealthrankings.org/health-data). 
 At this time, we do not plan to make historical calculations public - this repo may be useful for replicating parts of the 2025 and 2026 releases and for adapting CHR&R methods for future analyses. 
