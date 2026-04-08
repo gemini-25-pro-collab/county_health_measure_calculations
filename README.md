@@ -1,7 +1,7 @@
-# County Health Rankings & Roadmaps  
+# County Health Rankings & Roadmaps Measure Calculations  
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://countyhealthrankings.github.io/welcome/contribute.html)
 
-This repository is a work in progress. It contains code and data to replicate some measures for the [County Health Rankings & Roadmaps annual data release](https://www.countyhealthrankings.org/health-data). 
+This repository contains code and data to replicate some measures for the [County Health Rankings & Roadmaps annual data release](https://www.countyhealthrankings.org/health-data). 
 At this time, we do not plan to make historical calculations public - this repo may be useful for replicating parts of the 2025 and 2026 releases and for adapting CHR&R methods for future analyses. 
 
 ## Contributions are welcome!
