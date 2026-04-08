@@ -23,6 +23,9 @@ This repository is intended to support transparency and collaboration. Contribut
 
 We recommend using the `haven` R package to read `.sas7bdat` files in R. 
 
+## Citation 
+If you use the contents of this repo, please cite: 
+*Measure calculations for the CHR&R annual data release* (v2025). Zenodo. https://doi.org/10.5281/zenodo.19473865
 
 ## Questions? 
 If you prefer data or calculations in a different format, are looking for a specific measure not yet included, or have questions, please reach out via the [Discussions tab](https://github.com/countyhealthrankings/chrr_measure_calcs/discussions).
